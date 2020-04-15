@@ -15,8 +15,18 @@ namespace Fast.Activator.Tests
         [Fact]
         public void SimpleValue()
         {
-            var Result = FastActivator.CreateInstance<int>();
-            Assert.Equal(0, Result);
+            Assert.Equal(0, FastActivator.CreateInstance<int>());
+            Assert.Equal(0, FastActivator.CreateInstance(typeof(int)));
+            Assert.Equal(null, FastActivator.CreateInstance<string>());
+            Assert.Equal(null, FastActivator.CreateInstance(typeof(string)));
+        }
+
+        [Fact]
+        public void StructCreation()
+        {
+            var Result = FastActivator.CreateInstance<StructTest>(1, 2);
+            Assert.Equal(1, Result.A);
+            Assert.Equal(2, Result.B);
         }
 
         [Fact]
@@ -33,6 +43,18 @@ namespace Fast.Activator.Tests
             var Result = FastActivator.CreateInstance<ParamsMultipleTestClass>("A", true);
             Assert.Equal("A", Result.A);
             Assert.True(Result.B);
+        }
+
+        private struct StructTest
+        {
+            public StructTest(int a, int b)
+            {
+                A = a;
+                B = b;
+            }
+
+            public int A;
+            public int B;
         }
 
         private class ParamsMultipleTestClass

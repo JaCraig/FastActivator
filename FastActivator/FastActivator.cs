@@ -62,7 +62,12 @@ namespace Fast.Activator
             {
                 TempConstructor = CreateConstructors(type, HashCode);
             }
-            return TempConstructor.CreateInstance(args);
+            var ReturnValue = TempConstructor.CreateInstance(args);
+            if (!(ReturnValue is null))
+                return ReturnValue;
+            if (DefaultValues.Values.TryGetValue(HashCode, out ReturnValue))
+                return ReturnValue;
+            return ReturnValue;
         }
 
         /// <summary>
@@ -79,7 +84,12 @@ namespace Fast.Activator
             {
                 TempConstructor = CreateConstructors(type, HashCode);
             }
-            return TempConstructor.CreateInstance();
+            var ReturnValue = TempConstructor.CreateInstance();
+            if (!(ReturnValue is null))
+                return ReturnValue;
+            if (DefaultValues.Values.TryGetValue(HashCode, out ReturnValue))
+                return ReturnValue;
+            return ReturnValue;
         }
 
         /// <summary>

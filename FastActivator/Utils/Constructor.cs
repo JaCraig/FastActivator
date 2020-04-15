@@ -114,9 +114,13 @@ namespace Fast.Activator.Utils
                 .Select((info, index) => CreateArgumentExpression(ParameterExpression, info, index))
                 .ToArray();
 
+            Expression NewExpression = Expression.New(constructor, ArgsExpressions);
+            if (constructor.DeclaringType.IsValueType)
+                NewExpression = Expression.Convert(NewExpression, typeof(object));
+
             return Expression.Lambda(
                 typeof(ConstructorDelegate),
-                Expression.New(constructor, ArgsExpressions),
+                NewExpression,
                 ParameterExpression).Compile() as ConstructorDelegate;
         }
     }
