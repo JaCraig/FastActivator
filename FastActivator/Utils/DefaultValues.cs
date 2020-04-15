@@ -23,7 +23,6 @@ namespace Fast.Activator.Utils
             [typeof(ulong).GetHashCode()] = default(ulong),
             [typeof(double).GetHashCode()] = default(double),
             [typeof(float).GetHashCode()] = default(float),
-            asdf
             [typeof(decimal).GetHashCode()] = default(decimal),
             [typeof(bool).GetHashCode()] = default(bool),
             [typeof(char).GetHashCode()] = default(char),

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
@@ -12,24 +13,37 @@ namespace Fast.Activator.Utils
         /// <summary>
         /// Initializes a new instance of the <see cref="ConstructorList"/> class.
         /// </summary>
-        /// <param name="constructors">The constructors.</param>
-        public ConstructorList(ConstructorInfo[] constructors)
+        /// <param name="type">The type.</param>
+        /// <param name="hashCode">The hash code.</param>
+        public ConstructorList(Type type, int hashCode)
         {
-            Constructors = constructors.Select(x => new Constructor(x)).OrderBy(x => x.ParameterLength).ToArray();
-            if (Constructors.Length > 0)
+            var constructors = type?.GetConstructors() ?? Array.Empty<ConstructorInfo>();
+            var TempConstructors = new List<Constructor>();
+            for (int x = 0; x < constructors.Length; ++x)
+            {
+                var TempConstructor = constructors[x];
+                var Parameters = TempConstructor.GetParameters();
+                if (Parameters.Any(y => y.ParameterType.IsPointer))
+                    continue;
+                TempConstructors.Add(new Constructor(TempConstructor, Parameters));
+            }
+            if (DefaultValues.Values.TryGetValue(hashCode, out var DefaultValue))
+                TempConstructors.Add(new Constructor(_ => DefaultValue));
+            Constructors = TempConstructors.OrderBy(x => x.ParameterLength).ToArray();
+            if (Constructors.Length > 0 && Constructors[0].ParameterLength == 0)
                 DefaultConstructor = Constructors[0].ConstructorDelegate;
         }
+
+        /// <summary>
+        /// The default constructor
+        /// </summary>
+        private ConstructorDelegate DefaultConstructor;
 
         /// <summary>
         /// Gets the constructors.
         /// </summary>
         /// <value>The constructors.</value>
         private Constructor[] Constructors { get; }
-
-        /// <summary>
-        /// The default constructor
-        /// </summary>
-        private ConstructorDelegate DefaultConstructor;
 
         /// <summary>
         /// Creates an instance.

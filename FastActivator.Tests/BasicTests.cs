@@ -17,8 +17,8 @@ namespace Fast.Activator.Tests
         {
             Assert.Equal(0, FastActivator.CreateInstance<int>());
             Assert.Equal(0, FastActivator.CreateInstance(typeof(int)));
-            Assert.Equal(null, FastActivator.CreateInstance<string>());
-            Assert.Equal(null, FastActivator.CreateInstance(typeof(string)));
+            Assert.Null(FastActivator.CreateInstance<string>());
+            Assert.Null(FastActivator.CreateInstance(typeof(string)));
         }
 
         [Fact]

@@ -14,16 +14,30 @@ namespace Fast.Activator.Utils
         /// Initializes a new instance of the <see cref="Constructor"/> class.
         /// </summary>
         /// <param name="constructor">The constructor.</param>
-        public Constructor(ConstructorInfo constructor)
+        /// <param name="parameters">The parameters.</param>
+        /// <exception cref="ArgumentNullException">constructor</exception>
+        public Constructor(ConstructorInfo constructor, ParameterInfo[] parameters)
         {
             if (constructor is null)
                 throw new ArgumentNullException(nameof(constructor));
 
-            var TempParameters = constructor?.GetParameters() ?? Array.Empty<ParameterInfo>();
+            var TempParameters = parameters ?? Array.Empty<ParameterInfo>();
             Parameters = TempParameters.Select(x => x.ParameterType).ToArray();
             ParameterLength = Parameters.Length;
             ParameterNullable = Parameters.Select(x => !(Nullable.GetUnderlyingType(x) is null)).ToArray();
             ConstructorDelegate = CreateConstructor(constructor, TempParameters);
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Constructor"/> class.
+        /// </summary>
+        /// <param name="delegate">The delegate.</param>
+        public Constructor(ConstructorDelegate @delegate)
+        {
+            ConstructorDelegate = @delegate;
+            ParameterLength = 0;
+            Parameters = Array.Empty<Type>();
+            ParameterNullable = Array.Empty<bool>();
         }
 
         /// <summary>
