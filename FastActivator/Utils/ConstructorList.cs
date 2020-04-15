@@ -16,7 +16,8 @@ namespace Fast.Activator.Utils
         public ConstructorList(ConstructorInfo[] constructors)
         {
             Constructors = constructors.Select(x => new Constructor(x)).OrderBy(x => x.ParameterLength).ToArray();
-            DefaultConstructor = Constructors[0].ConstructorDelegate;
+            if (Constructors.Length > 0)
+                DefaultConstructor = Constructors[0].ConstructorDelegate;
         }
 
         /// <summary>
@@ -54,6 +55,8 @@ namespace Fast.Activator.Utils
         /// <returns>The instance created.</returns>
         public object CreateInstance()
         {
+            if (DefaultConstructor is null)
+                return null;
             return DefaultConstructor(Array.Empty<object>());
         }
     }

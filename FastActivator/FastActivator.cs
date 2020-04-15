@@ -27,7 +27,10 @@ namespace Fast.Activator
         /// <returns>The instance created.</returns>
         public static TClass CreateInstance<TClass>(params object[] args)
         {
-            return (TClass)CreateInstance(typeof(TClass), args);
+            var ReturnValue = CreateInstance(typeof(TClass), args);
+            if (ReturnValue is null)
+                return default;
+            return (TClass)ReturnValue;
         }
 
         /// <summary>
@@ -37,7 +40,10 @@ namespace Fast.Activator
         /// <returns>The instance created.</returns>
         public static TClass CreateInstance<TClass>()
         {
-            return (TClass)CreateInstance(typeof(TClass));
+            var ReturnValue = CreateInstance(typeof(TClass));
+            if (ReturnValue is null)
+                return default;
+            return (TClass)ReturnValue;
         }
 
         /// <summary>

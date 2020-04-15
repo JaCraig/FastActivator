@@ -13,6 +13,13 @@ namespace Fast.Activator.Tests
         }
 
         [Fact]
+        public void SimpleValue()
+        {
+            var Result = FastActivator.CreateInstance<int>();
+            Assert.Equal(0, Result);
+        }
+
+        [Fact]
         public void WithParams()
         {
             var Result = FastActivator.CreateInstance<ParamsTestClass>("A", true);
