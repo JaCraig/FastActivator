@@ -29,21 +29,23 @@ namespace Fast.Activator.Utils
             }
             if (DefaultValues.Values.TryGetValue(hashCode, out var DefaultValue))
                 TempConstructors.Add(new Constructor(_ => DefaultValue));
+            else if (type.IsEnum && DefaultValues.Values.TryGetValue(type.GetEnumUnderlyingType().GetHashCode(), out DefaultValue))
+                TempConstructors.Add(new Constructor(_ => Enum.Parse(type, DefaultValue.ToString(), true)));
             Constructors = TempConstructors.OrderBy(x => x.ParameterLength).ToArray();
             if (Constructors.Length > 0 && Constructors[0].ParameterLength == 0)
                 DefaultConstructor = Constructors[0].ConstructorDelegate;
         }
 
         /// <summary>
-        /// The default constructor
-        /// </summary>
-        private ConstructorDelegate DefaultConstructor;
-
-        /// <summary>
         /// Gets the constructors.
         /// </summary>
         /// <value>The constructors.</value>
         private Constructor[] Constructors { get; }
+
+        /// <summary>
+        /// The default constructor
+        /// </summary>
+        private ConstructorDelegate DefaultConstructor;
 
         /// <summary>
         /// Creates an instance.

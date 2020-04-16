@@ -5,6 +5,13 @@ namespace Fast.Activator.Tests
     public class BasicTests
     {
         [Fact]
+        public void Enums()
+        {
+            Assert.Equal(Status.Start, FastActivator.CreateInstance<Status>());
+            Assert.Equal(Status.Start, FastActivator.CreateInstance(typeof(Status)));
+        }
+
+        [Fact]
         public void Simple()
         {
             var Result = FastActivator.CreateInstance<SimpleTestClass>();
@@ -43,6 +50,12 @@ namespace Fast.Activator.Tests
             var Result = FastActivator.CreateInstance<ParamsMultipleTestClass>("A", true);
             Assert.Equal("A", Result.A);
             Assert.True(Result.B);
+        }
+
+        private enum Status
+        {
+            Start = 0,
+            Stop
         }
 
         private struct StructTest
