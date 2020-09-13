@@ -10,14 +10,14 @@ namespace Fast.Activator
     public static class FastActivator
     {
         /// <summary>
+        /// The constructors
+        /// </summary>
+        private static readonly Dictionary<int, ConstructorList> Constructors = new Dictionary<int, ConstructorList>();
+
+        /// <summary>
         /// The lock object
         /// </summary>
         private static readonly object LockObject = new object();
-
-        /// <summary>
-        /// The constructors
-        /// </summary>
-        private static Dictionary<int, ConstructorList> Constructors = new Dictionary<int, ConstructorList>();
 
         /// <summary>
         /// Creates an instance of the class.
