@@ -28,9 +28,7 @@ namespace Fast.Activator
         public static TClass CreateInstance<TClass>(params object[] args)
         {
             var ReturnValue = CreateInstance(typeof(TClass), args);
-            if (ReturnValue is null)
-                return default;
-            return (TClass)ReturnValue;
+            return ReturnValue is null ? default : (TClass)ReturnValue;
         }
 
         /// <summary>
@@ -41,9 +39,7 @@ namespace Fast.Activator
         public static TClass CreateInstance<TClass>()
         {
             var ReturnValue = CreateInstance(typeof(TClass));
-            if (ReturnValue is null)
-                return default;
-            return (TClass)ReturnValue;
+            return ReturnValue is null ? default : (TClass)ReturnValue;
         }
 
         /// <summary>
@@ -54,12 +50,7 @@ namespace Fast.Activator
         /// <returns>The object if it can be created, null otherwise.</returns>
         public static object CreateInstance(Type type, params object[] args)
         {
-            int HashCode = type.GetHashCode();
-            if (!Constructors.TryGetValue(HashCode, out var TempConstructor))
-            {
-                TempConstructor = CreateConstructors(type, HashCode);
-            }
-            return TempConstructor.CreateInstance(args);
+            return GetConstructorList(type)?.CreateInstance(args);
         }
 
         /// <summary>
@@ -69,12 +60,7 @@ namespace Fast.Activator
         /// <returns>The object if it can be created, null otherwise.</returns>
         public static object CreateInstance(Type type)
         {
-            int HashCode = type.GetHashCode();
-            if (!Constructors.TryGetValue(HashCode, out var TempConstructor))
-            {
-                TempConstructor = CreateConstructors(type, HashCode);
-            }
-            return TempConstructor.CreateInstance();
+            return GetConstructorList(type)?.CreateInstance();
         }
 
         /// <summary>
@@ -92,6 +78,29 @@ namespace Fast.Activator
                     return TempConstructor;
                 TempConstructor = new ConstructorList(type, HashCode);
                 Constructors.Add(HashCode, TempConstructor);
+            }
+            return TempConstructor;
+        }
+
+        /// <summary>
+        /// Gets the constructor list.
+        /// </summary>
+        /// <param name="type">The type.</param>
+        /// <returns>The constructor list.</returns>
+        /// <exception cref="ArgumentNullException">type</exception>
+        private static ConstructorList GetConstructorList(Type type)
+        {
+            if (type is null)
+                throw new ArgumentNullException(nameof(type));
+            int HashCode;
+            try
+            {
+                HashCode = type.GetHashCode();
+            }
+            catch { return null; }
+            if (!Constructors.TryGetValue(HashCode, out var TempConstructor))
+            {
+                return CreateConstructors(type, HashCode);
             }
             return TempConstructor;
         }
