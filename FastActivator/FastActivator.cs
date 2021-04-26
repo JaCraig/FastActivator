@@ -50,6 +50,8 @@ namespace Fast.Activator
         /// <returns>The object if it can be created, null otherwise.</returns>
         public static object CreateInstance(Type type, params object[] args)
         {
+            if (type is null)
+                throw new ArgumentNullException(nameof(type));
             return GetConstructorList(type)?.CreateInstance(args);
         }
 
@@ -60,6 +62,8 @@ namespace Fast.Activator
         /// <returns>The object if it can be created, null otherwise.</returns>
         public static object CreateInstance(Type type)
         {
+            if (type is null)
+                throw new ArgumentNullException(nameof(type));
             return GetConstructorList(type)?.CreateInstance();
         }
 
@@ -90,8 +94,6 @@ namespace Fast.Activator
         /// <exception cref="ArgumentNullException">type</exception>
         private static ConstructorList GetConstructorList(Type type)
         {
-            if (type is null)
-                throw new ArgumentNullException(nameof(type));
             int HashCode;
             try
             {
