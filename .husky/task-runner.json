@@ -1,21 +1,30 @@
 {
-   "tasks": [
-     {
+  "variables": [
+    {
+       "name": "root-dir",
+       "command": "cmd",
+       "args": ["/c", "dir", "/b"]
+    }
+ ],
+ "tasks": [
+    {
        "name": "commit-message-linter",
-       "command": "husky",
-       "args": [
-         "exec",
-         ".husky/csx/commit-lint.csx",
-         "--args",
-         "${args}"
-       ]
-     },
-     {
+       "command": "dotnet",
+       "args": ["husky", "exec", ".husky/csx/commit-lint.csx", "--args", "${args}"]
+    },
+    {
        "name": "dotnet-format",
+       "command": "dotnet",
        "group": "pre-commit",
-       "command": "dotnet-format",
-       "args": ["--include", "${staged}"],
+       "args": ["format", "--include" , "${staged}"],
        "include": ["**/*.cs"]
-     }
-   ]
+    },
+    {
+       "name": "echo staged files",
+       "pathMode": "absolute",
+       "command": "cmd",
+       "group": "pre-commit",
+       "args": [ "/c", "echo", "${staged}"]
+    }
+ ]
 }
