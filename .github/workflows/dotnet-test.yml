@@ -1,11 +1,9 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: .NET Test
+name: .NET Test Pull Requests
 
 on:
-  push:
-    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 
@@ -13,7 +11,7 @@ jobs:
   build:
   
     env:
-      BUILD_CONFIG: 'Release'
+      BUILD_CONFIG: 'Debug'
       SOLUTION: 'FastActivator.sln'
 
     runs-on: ubuntu-latest
@@ -23,8 +21,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.2.0
     - name: Setup .NET SDK ${{ matrix.dotnet-version }}
       uses: actions/setup-dotnet@v3.2.0
       with:
