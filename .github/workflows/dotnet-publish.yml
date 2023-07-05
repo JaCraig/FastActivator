@@ -57,10 +57,6 @@ jobs:
       run: versionize --changelog-all --exit-insignificant-commits
       continue-on-error: true
       
-    - name: No release required
-      if: steps.versionize.outcome != 'success'
-      run: echo "Skipping Release."
-      
     - name: Upload NuGet package
       uses: actions/upload-artifact@v3
       with:
