@@ -1,7 +1,7 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: .NET Test
+name: .NET Publish
 
 on:
   push:
@@ -44,4 +44,10 @@ jobs:
       with:
         name: NugetPackage
         path: ./**/*.nupkg
+      if: ${{ always() }}
+    - name: Upload Symbol package
+      uses: actions/upload-artifact@v3
+      with:
+        name: SymbolPackage
+        path: ./**/*.snupkg
       if: ${{ always() }}
