@@ -21,33 +21,66 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.2.0
+    
     - name: Setup .NET SDK ${{ matrix.dotnet-version }}
       uses: actions/setup-dotnet@v3.2.0
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
+        
+    - name: Install Versionize
+      run: dotnet tool install --global Versionize
+    
+    - name: Setup git
+      run: |
+            git config --local user.email "JaCraig@users.noreply.github.com"
+            git config --local user.name "James Craig"
+      
     - name: Restore dependencies
       run: dotnet restore
+      
     - name: Build
       run: dotnet build --no-restore --configuration $BUILD_CONFIG
+      if: steps.versionize.outcome == 'success'
+      
     - name: Test
       run: dotnet test /p:Configuration=$BUILD_CONFIG --no-build --verbosity normal --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
+    
     - name: Upload test results
       uses: actions/upload-artifact@v3
       with:
         name: dotnet-results-${{ matrix.dotnet-version }}
         path: TestResults-${{ matrix.dotnet-version }}
       if: ${{ always() }}
+      
+    - name: Versionize Release
+      id: versionize
+      run: versionize --changelog-all --exit-insignificant-commits
+      continue-on-error: true
+      
+    - name: No release required
+      if: steps.versionize.outcome != 'success'
+      run: echo "Skipping Release."
+      
     - name: Upload NuGet package
       uses: actions/upload-artifact@v3
       with:
         name: NugetPackage
         path: ./**/*.nupkg
-      if: ${{ always() }}
+      if: steps.versionize.outcome == 'success'
+      
     - name: Upload Symbol package
       uses: actions/upload-artifact@v3
       with:
         name: SymbolPackage
         path: ./**/*.snupkg
-      if: ${{ always() }}
+      if: steps.versionize.outcome == 'success'
+
+    - name: Push changes to Github
+      if: steps.versionize.outcome == 'success'
+      uses: ad-m/github-push-action@0.6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+        tags: true
+    
+    
