@@ -36,10 +36,7 @@ namespace Fast.Activator.Tests.BaseClasses
         /// </summary>
         /// <returns>The async task.</returns>
         [Fact]
-        public Task BreakObject()
-        {
-            return Mech.BreakAsync(TestObject);
-        }
+        public Task BreakObject() => Mech.BreakAsync(TestObject);
     }
 
     /// <summary>
@@ -66,9 +63,6 @@ namespace Fast.Activator.Tests.BaseClasses
         /// </summary>
         /// <returns>The async task.</returns>
         [Fact]
-        public Task BreakType()
-        {
-            return Mech.BreakAsync(ObjectType);
-        }
+        public Task BreakType() => Mech.BreakAsync(ObjectType);
     }
 }
