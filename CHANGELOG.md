@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.11"></a>
+## [2.0.11](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.11) (2023-7-6)
+
+### Bug Fixes
+
+* more tests ([009acc5](https://www.github.com/JaCraig/FastActivator/commit/009acc50c922ea33f5c5451a7677bc1435c30c7e))
+
+### Other
+
+* **release:** 2.0.10 ([3c8bf20](https://www.github.com/JaCraig/FastActivator/commit/3c8bf20a5d35925549872bc4be8c6a126edfea9c))
+
 <a name="2.0.10"></a>
 ## [2.0.10](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.10) (2023-7-6)
 
