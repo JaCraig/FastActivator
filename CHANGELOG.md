@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.13"></a>
+## [2.0.13](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.13) (2023-7-6)
+
+### Bug Fixes
+
+* bump BenchmarkDotNet from 0.13.4 to 0.13.5 ([a5b2d6f](https://www.github.com/JaCraig/FastActivator/commit/a5b2d6f751246bdd89e638f11d54937de5612230))
+
+### Other
+
+* Merge pull request #8 from JaCraig/dependabot/nuget/BenchmarkDotNet-0.13.5 ([ee51609](https://www.github.com/JaCraig/FastActivator/commit/ee516098e4b5e26a35c767df9bb5de47d93dfbda))
+
 <a name="2.0.12"></a>
 ## [2.0.12](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.12) (2023-7-6)
 
