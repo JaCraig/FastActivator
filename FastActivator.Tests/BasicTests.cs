@@ -12,6 +12,13 @@ namespace Fast.Activator.Tests
         }
 
         [Fact]
+        public void Nullable()
+        {
+            Assert.Null(FastActivator.CreateInstance<int?>());
+            Assert.Null(FastActivator.CreateInstance(typeof(int?)));
+        }
+
+        [Fact]
         public void Simple()
         {
             var Result = FastActivator.CreateInstance<SimpleTestClass>();
@@ -50,12 +57,6 @@ namespace Fast.Activator.Tests
             var Result = FastActivator.CreateInstance<ParamsMultipleTestClass>("A", true);
             Assert.Equal("A", Result.A);
             Assert.True(Result.B);
-        }
-
-        private enum Status
-        {
-            Start = 0,
-            Stop
         }
 
         private struct StructTest
@@ -110,6 +111,12 @@ namespace Fast.Activator.Tests
         {
             public string A { get; set; }
             public bool B { get; set; }
+        }
+
+        private enum Status
+        {
+            Start = 0,
+            Stop
         }
     }
 }
