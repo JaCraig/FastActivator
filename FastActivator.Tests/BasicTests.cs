@@ -18,6 +18,8 @@ namespace Fast.Activator.Tests
             Assert.Null(FastActivator.CreateInstance(typeof(int?)));
             Assert.Null(FastActivator.CreateInstance<double?>());
             Assert.Null(FastActivator.CreateInstance(typeof(double?)));
+            Assert.Null(FastActivator.CreateInstance<float?>());
+            Assert.Null(FastActivator.CreateInstance(typeof(float?)));
         }
 
         [Fact]
