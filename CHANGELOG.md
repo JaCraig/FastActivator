@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.8"></a>
+## [2.0.8](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.8) (2023-7-6)
+
+### Bug Fixes
+
+* Adding commit linter script to repo ([8d08e19](https://www.github.com/JaCraig/FastActivator/commit/8d08e19c6b012c3d309bda89e68a77c48df3fdcc))
+* Adding nullable type tests ([cf8eede](https://www.github.com/JaCraig/FastActivator/commit/cf8eedef163b900ae4fdd44b5917294935e1ec17))
+* bump BenchmarkDotNet from 0.13.4 to 0.13.5 ([74dd7d5](https://www.github.com/JaCraig/FastActivator/commit/74dd7d5fba690b3fb40316003d0b5927ed57a93a))
+
 <a name="2.0.7"></a>
 ## [2.0.7](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.7) (2023-7-6)
 
