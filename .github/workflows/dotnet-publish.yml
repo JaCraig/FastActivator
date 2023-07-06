@@ -6,13 +6,9 @@ name: .NET Publish
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-    types: [closed]
 
 jobs:
   build:
-    if: github.event.pull_request.merged == true || github.event_name == 'push'
     env:
       BUILD_CONFIG: 'Release'
       SOLUTION: 'FastActivator.sln'
