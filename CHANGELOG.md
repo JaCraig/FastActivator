@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.12"></a>
+## [2.0.12](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.12) (2023-7-6)
+
+### Bug Fixes
+
+* testing dependabot again ([357b842](https://www.github.com/JaCraig/FastActivator/commit/357b8426f924ec3d1dd3f36b90bd93652981ca5b))
+
+### Other
+
+* Update dependabot.yml ([a070b30](https://www.github.com/JaCraig/FastActivator/commit/a070b3051ab54e7f5435c8f6770c98a44343073b))
+
 <a name="2.0.11"></a>
 ## [2.0.11](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.11) (2023-7-6)
 
