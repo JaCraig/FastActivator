@@ -40,6 +40,11 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
       
+    - name: Versionize Release
+      id: versionize
+      run: versionize --changelog-all --exit-insignificant-commits
+      continue-on-error: true
+      
     - name: Build
       run: dotnet build --no-restore --configuration $BUILD_CONFIG
       
@@ -52,11 +57,6 @@ jobs:
         name: dotnet-results-${{ matrix.dotnet-version }}
         path: TestResults-${{ matrix.dotnet-version }}
       if: ${{ always() }}
-      
-    - name: Versionize Release
-      id: versionize
-      run: versionize --changelog-all --exit-insignificant-commits
-      continue-on-error: true
       
     - name: Upload NuGet package
       uses: actions/upload-artifact@v3
