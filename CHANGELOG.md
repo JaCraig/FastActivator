@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.14"></a>
+## [2.0.14](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.14) (2023-7-7)
+
+### Bug Fixes
+
+* Update for dependabot so it ignores Mecha ([351fdb5](https://www.github.com/JaCraig/FastActivator/commit/351fdb56811c56bf9ddd0803744f991a97987ec7))
+
+### Other
+
+* Create docsfx.yml ([b66cbdc](https://www.github.com/JaCraig/FastActivator/commit/b66cbdc5126dae9807fdfdcb001b1847eb6dd4b6))
+* Update docsfx.yml ([70d8fc3](https://www.github.com/JaCraig/FastActivator/commit/70d8fc3232004a545129cea95fee6e82f0fc6eed))
+* Adding API to docs ([d73a07e](https://www.github.com/JaCraig/FastActivator/commit/d73a07e8aec3f2bd97fcf46378814d98f5b7776c))
+* Adding DocFx ([468f50c](https://www.github.com/JaCraig/FastActivator/commit/468f50cc0e68503b721025e52d21762c404e6ff8))
+* Finishing basic DocFX setup ([8285f81](https://www.github.com/JaCraig/FastActivator/commit/8285f818914a10cc3723f19fbab4ecba55ab05da))
+* merge ([dd21202](https://www.github.com/JaCraig/FastActivator/commit/dd21202dacac28ccf0e9196d3f797a5d5461d084))
+* merging workflow ([8acb214](https://www.github.com/JaCraig/FastActivator/commit/8acb214ad26891954bb7e1e92b075627152b3802))
+* Update docsfx.yml ([f0d3f22](https://www.github.com/JaCraig/FastActivator/commit/f0d3f225892c94b5af14bbaa6a340c1d56592bdb))
+* Update docsfx.yml ([2f5ed4e](https://www.github.com/JaCraig/FastActivator/commit/2f5ed4ee600dbf21061136220236ebdd6bb40f3f))
+* updating package information and readme ([0ee078b](https://www.github.com/JaCraig/FastActivator/commit/0ee078baf21551d865991846b59ce956a41a3ab0))
+
 <a name="2.0.13"></a>
 ## [2.0.13](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.13) (2023-7-6)
 
