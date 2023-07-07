@@ -4,6 +4,14 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
       "type": "ManagedReference",
       "source_relative_path": "api/Fast.Activator.FastActivator.yml",
       "output": {
@@ -79,9 +87,6 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html"
-        },
-        ".json": {
-          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -102,9 +107,16 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html"
-        },
-        ".json": {
-          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon.png"
         }
       },
       "version": ""
@@ -125,9 +137,6 @@
       "output": {
         ".html": {
           "relative_path": "toc.html"
-        },
-        ".json": {
-          "relative_path": "toc.json"
         }
       },
       "version": ""
