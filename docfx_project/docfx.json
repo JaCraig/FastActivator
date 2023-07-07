@@ -3,12 +3,14 @@
     {
       "src": [
         {
-          "files": [
-            "bin/**/*.dll"
-          ]
+          "files": ["FastActivator/bin/Release/net6.0/Fast.Activator.dll"],
+          "src": "../"
         }
       ],
       "dest": "api",
+      "properties": {
+        "TargetFramework": "net6.0"
+      },
       "includePrivateMembers": false,
       "disableGitFeatures": false,
       "disableDefaultFilter": false,
