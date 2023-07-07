@@ -23,6 +23,9 @@ jobs:
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
         
+    - name: Restore dependencies
+      run: dotnet restore
+        
     - name: Build
       run: dotnet build --no-restore --configuration $BUILD_CONFIG
 
