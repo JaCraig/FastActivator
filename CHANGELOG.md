@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.15"></a>
+## [2.0.15](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.15) (2023-7-7)
+
+### Bug Fixes
+
+* bump xunit.runner.visualstudio from 2.4.5 to 2.5.0 ([30296b5](https://www.github.com/JaCraig/FastActivator/commit/30296b5a9e060b4dded878ebe7c0838daa1eca77))
+
+### Other
+
+* Merge pull request #10 from JaCraig/dependabot/nuget/xunit.runner.visualstudio-2.5.0 ([3dbca83](https://www.github.com/JaCraig/FastActivator/commit/3dbca83cd96e8dda00d2c4833c9cafd7752b8a26))
+
 <a name="2.0.14"></a>
 ## [2.0.14](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.14) (2023-7-7)
 
