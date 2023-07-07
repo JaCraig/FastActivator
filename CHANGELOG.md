@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.16"></a>
+## [2.0.16](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.16) (2023-7-7)
+
+### Bug Fixes
+
+* Adding release to NuGet ([38ae390](https://www.github.com/JaCraig/FastActivator/commit/38ae39048f5ab0dc49799567945b6b7f7ce680d2))
+
+### Other
+
+* Merge pull request #11 from JaCraig/JaCraig-patch-1 ([0df2ec7](https://www.github.com/JaCraig/FastActivator/commit/0df2ec71abce760829315da47dc549d115d4df8e))
+
 <a name="2.0.15"></a>
 ## [2.0.15](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.15) (2023-7-7)
 
