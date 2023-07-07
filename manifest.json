@@ -4,11 +4,84 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fast.Activator.FastActivator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fast.Activator.FastActivator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fast.Activator.Utils.Constructor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fast.Activator.Utils.Constructor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fast.Activator.Utils.ConstructorDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fast.Activator.Utils.ConstructorDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fast.Activator.Utils.ConstructorList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fast.Activator.Utils.ConstructorList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fast.Activator.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fast.Activator.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fast.Activator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fast.Activator.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""

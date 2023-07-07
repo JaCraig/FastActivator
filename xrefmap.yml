@@ -1,3 +1,246 @@
 ### YamlMime:XRefMap
 sorted: true
-references: []
+references:
+- uid: Fast.Activator
+  name: Fast.Activator
+  href: api/Fast.Activator.html
+  commentId: N:Fast.Activator
+  fullName: Fast.Activator
+  nameWithType: Fast.Activator
+- uid: Fast.Activator.FastActivator
+  name: FastActivator
+  href: api/Fast.Activator.FastActivator.html
+  commentId: T:Fast.Activator.FastActivator
+  fullName: Fast.Activator.FastActivator
+  nameWithType: FastActivator
+- uid: Fast.Activator.FastActivator.CreateInstance(System.Type,System.Object[])
+  name: CreateInstance(Type, params object[])
+  href: api/Fast.Activator.FastActivator.html#Fast_Activator_FastActivator_CreateInstance_System_Type_System_Object___
+  commentId: M:Fast.Activator.FastActivator.CreateInstance(System.Type,System.Object[])
+  name.vb: CreateInstance(Type, ParamArray Object())
+  fullName: Fast.Activator.FastActivator.CreateInstance(System.Type, params object[])
+  fullName.vb: Fast.Activator.FastActivator.CreateInstance(System.Type, ParamArray Object())
+  nameWithType: FastActivator.CreateInstance(Type, params object[])
+  nameWithType.vb: FastActivator.CreateInstance(Type, ParamArray Object())
+- uid: Fast.Activator.FastActivator.CreateInstance(System.Type)
+  name: CreateInstance(Type)
+  href: api/Fast.Activator.FastActivator.html#Fast_Activator_FastActivator_CreateInstance_System_Type_
+  commentId: M:Fast.Activator.FastActivator.CreateInstance(System.Type)
+  fullName: Fast.Activator.FastActivator.CreateInstance(System.Type)
+  nameWithType: FastActivator.CreateInstance(Type)
+- uid: Fast.Activator.FastActivator.CreateInstance*
+  name: CreateInstance
+  href: api/Fast.Activator.FastActivator.html#Fast_Activator_FastActivator_CreateInstance_
+  commentId: Overload:Fast.Activator.FastActivator.CreateInstance
+  fullName: Fast.Activator.FastActivator.CreateInstance
+  nameWithType: FastActivator.CreateInstance
+- uid: Fast.Activator.FastActivator.CreateInstance``1
+  name: CreateInstance<TClass>()
+  href: api/Fast.Activator.FastActivator.html#Fast_Activator_FastActivator_CreateInstance__1
+  commentId: M:Fast.Activator.FastActivator.CreateInstance``1
+  name.vb: CreateInstance(Of TClass)()
+  fullName: Fast.Activator.FastActivator.CreateInstance<TClass>()
+  fullName.vb: Fast.Activator.FastActivator.CreateInstance(Of TClass)()
+  nameWithType: FastActivator.CreateInstance<TClass>()
+  nameWithType.vb: FastActivator.CreateInstance(Of TClass)()
+- uid: Fast.Activator.FastActivator.CreateInstance``1(System.Object[])
+  name: CreateInstance<TClass>(params object[])
+  href: api/Fast.Activator.FastActivator.html#Fast_Activator_FastActivator_CreateInstance__1_System_Object___
+  commentId: M:Fast.Activator.FastActivator.CreateInstance``1(System.Object[])
+  name.vb: CreateInstance(Of TClass)(ParamArray Object())
+  fullName: Fast.Activator.FastActivator.CreateInstance<TClass>(params object[])
+  fullName.vb: Fast.Activator.FastActivator.CreateInstance(Of TClass)(ParamArray Object())
+  nameWithType: FastActivator.CreateInstance<TClass>(params object[])
+  nameWithType.vb: FastActivator.CreateInstance(Of TClass)(ParamArray Object())
+- uid: Fast.Activator.Utils
+  name: Fast.Activator.Utils
+  href: api/Fast.Activator.Utils.html
+  commentId: N:Fast.Activator.Utils
+  fullName: Fast.Activator.Utils
+  nameWithType: Fast.Activator.Utils
+- uid: Fast.Activator.Utils.Constructor
+  name: Constructor
+  href: api/Fast.Activator.Utils.Constructor.html
+  commentId: T:Fast.Activator.Utils.Constructor
+  fullName: Fast.Activator.Utils.Constructor
+  nameWithType: Constructor
+- uid: Fast.Activator.Utils.Constructor.#ctor(Fast.Activator.Utils.ConstructorDelegate)
+  name: Constructor(ConstructorDelegate)
+  href: api/Fast.Activator.Utils.Constructor.html#Fast_Activator_Utils_Constructor__ctor_Fast_Activator_Utils_ConstructorDelegate_
+  commentId: M:Fast.Activator.Utils.Constructor.#ctor(Fast.Activator.Utils.ConstructorDelegate)
+  name.vb: New(ConstructorDelegate)
+  fullName: Fast.Activator.Utils.Constructor.Constructor(Fast.Activator.Utils.ConstructorDelegate)
+  fullName.vb: Fast.Activator.Utils.Constructor.New(Fast.Activator.Utils.ConstructorDelegate)
+  nameWithType: Constructor.Constructor(ConstructorDelegate)
+  nameWithType.vb: Constructor.New(ConstructorDelegate)
+- uid: Fast.Activator.Utils.Constructor.#ctor(System.Reflection.ConstructorInfo,System.Reflection.ParameterInfo[])
+  name: Constructor(ConstructorInfo, ParameterInfo[])
+  href: api/Fast.Activator.Utils.Constructor.html#Fast_Activator_Utils_Constructor__ctor_System_Reflection_ConstructorInfo_System_Reflection_ParameterInfo___
+  commentId: M:Fast.Activator.Utils.Constructor.#ctor(System.Reflection.ConstructorInfo,System.Reflection.ParameterInfo[])
+  name.vb: New(ConstructorInfo, ParameterInfo())
+  fullName: Fast.Activator.Utils.Constructor.Constructor(System.Reflection.ConstructorInfo, System.Reflection.ParameterInfo[])
+  fullName.vb: Fast.Activator.Utils.Constructor.New(System.Reflection.ConstructorInfo, System.Reflection.ParameterInfo())
+  nameWithType: Constructor.Constructor(ConstructorInfo, ParameterInfo[])
+  nameWithType.vb: Constructor.New(ConstructorInfo, ParameterInfo())
+- uid: Fast.Activator.Utils.Constructor.#ctor*
+  name: Constructor
+  href: api/Fast.Activator.Utils.Constructor.html#Fast_Activator_Utils_Constructor__ctor_
+  commentId: Overload:Fast.Activator.Utils.Constructor.#ctor
+  name.vb: New
+  fullName: Fast.Activator.Utils.Constructor.Constructor
+  fullName.vb: Fast.Activator.Utils.Constructor.New
+  nameWithType: Constructor.Constructor
+  nameWithType.vb: Constructor.New
+- uid: Fast.Activator.Utils.Constructor.CreateInstance(System.Object[])
+  name: CreateInstance(object[])
+  href: api/Fast.Activator.Utils.Constructor.html#Fast_Activator_Utils_Constructor_CreateInstance_System_Object___
+  commentId: M:Fast.Activator.Utils.Constructor.CreateInstance(System.Object[])
+  name.vb: CreateInstance(Object())
+  fullName: Fast.Activator.Utils.Constructor.CreateInstance(object[])
+  fullName.vb: Fast.Activator.Utils.Constructor.CreateInstance(Object())
+  nameWithType: Constructor.CreateInstance(object[])
+  nameWithType.vb: Constructor.CreateInstance(Object())
+- uid: Fast.Activator.Utils.Constructor.CreateInstance*
+  name: CreateInstance
+  href: api/Fast.Activator.Utils.Constructor.html#Fast_Activator_Utils_Constructor_CreateInstance_
+  commentId: Overload:Fast.Activator.Utils.Constructor.CreateInstance
+  fullName: Fast.Activator.Utils.Constructor.CreateInstance
+  nameWithType: Constructor.CreateInstance
+- uid: Fast.Activator.Utils.Constructor.IsMatch(System.Object[])
+  name: IsMatch(object[])
+  href: api/Fast.Activator.Utils.Constructor.html#Fast_Activator_Utils_Constructor_IsMatch_System_Object___
+  commentId: M:Fast.Activator.Utils.Constructor.IsMatch(System.Object[])
+  name.vb: IsMatch(Object())
+  fullName: Fast.Activator.Utils.Constructor.IsMatch(object[])
+  fullName.vb: Fast.Activator.Utils.Constructor.IsMatch(Object())
+  nameWithType: Constructor.IsMatch(object[])
+  nameWithType.vb: Constructor.IsMatch(Object())
+- uid: Fast.Activator.Utils.Constructor.IsMatch*
+  name: IsMatch
+  href: api/Fast.Activator.Utils.Constructor.html#Fast_Activator_Utils_Constructor_IsMatch_
+  commentId: Overload:Fast.Activator.Utils.Constructor.IsMatch
+  fullName: Fast.Activator.Utils.Constructor.IsMatch
+  nameWithType: Constructor.IsMatch
+- uid: Fast.Activator.Utils.Constructor.ParameterLength
+  name: ParameterLength
+  href: api/Fast.Activator.Utils.Constructor.html#Fast_Activator_Utils_Constructor_ParameterLength
+  commentId: P:Fast.Activator.Utils.Constructor.ParameterLength
+  fullName: Fast.Activator.Utils.Constructor.ParameterLength
+  nameWithType: Constructor.ParameterLength
+- uid: Fast.Activator.Utils.Constructor.ParameterLength*
+  name: ParameterLength
+  href: api/Fast.Activator.Utils.Constructor.html#Fast_Activator_Utils_Constructor_ParameterLength_
+  commentId: Overload:Fast.Activator.Utils.Constructor.ParameterLength
+  fullName: Fast.Activator.Utils.Constructor.ParameterLength
+  nameWithType: Constructor.ParameterLength
+- uid: Fast.Activator.Utils.ConstructorDelegate
+  name: ConstructorDelegate
+  href: api/Fast.Activator.Utils.ConstructorDelegate.html
+  commentId: T:Fast.Activator.Utils.ConstructorDelegate
+  fullName: Fast.Activator.Utils.ConstructorDelegate
+  nameWithType: ConstructorDelegate
+- uid: Fast.Activator.Utils.ConstructorDelegate.#ctor(System.Object,System.IntPtr)
+  name: ConstructorDelegate(object, IntPtr)
+  href: api/Fast.Activator.Utils.ConstructorDelegate.html#Fast_Activator_Utils_ConstructorDelegate__ctor_System_Object_System_IntPtr_
+  commentId: M:Fast.Activator.Utils.ConstructorDelegate.#ctor(System.Object,System.IntPtr)
+  name.vb: New(Object, IntPtr)
+  fullName: Fast.Activator.Utils.ConstructorDelegate.ConstructorDelegate(object, System.IntPtr)
+  fullName.vb: Fast.Activator.Utils.ConstructorDelegate.New(Object, System.IntPtr)
+  nameWithType: ConstructorDelegate.ConstructorDelegate(object, IntPtr)
+  nameWithType.vb: ConstructorDelegate.New(Object, IntPtr)
+- uid: Fast.Activator.Utils.ConstructorDelegate.#ctor*
+  name: ConstructorDelegate
+  href: api/Fast.Activator.Utils.ConstructorDelegate.html#Fast_Activator_Utils_ConstructorDelegate__ctor_
+  commentId: Overload:Fast.Activator.Utils.ConstructorDelegate.#ctor
+  name.vb: New
+  fullName: Fast.Activator.Utils.ConstructorDelegate.ConstructorDelegate
+  fullName.vb: Fast.Activator.Utils.ConstructorDelegate.New
+  nameWithType: ConstructorDelegate.ConstructorDelegate
+  nameWithType.vb: ConstructorDelegate.New
+- uid: Fast.Activator.Utils.ConstructorDelegate.BeginInvoke(System.Object[],System.AsyncCallback,System.Object)
+  name: BeginInvoke(object[], AsyncCallback, object)
+  href: api/Fast.Activator.Utils.ConstructorDelegate.html#Fast_Activator_Utils_ConstructorDelegate_BeginInvoke_System_Object___System_AsyncCallback_System_Object_
+  commentId: M:Fast.Activator.Utils.ConstructorDelegate.BeginInvoke(System.Object[],System.AsyncCallback,System.Object)
+  name.vb: BeginInvoke(Object(), AsyncCallback, Object)
+  fullName: Fast.Activator.Utils.ConstructorDelegate.BeginInvoke(object[], System.AsyncCallback, object)
+  fullName.vb: Fast.Activator.Utils.ConstructorDelegate.BeginInvoke(Object(), System.AsyncCallback, Object)
+  nameWithType: ConstructorDelegate.BeginInvoke(object[], AsyncCallback, object)
+  nameWithType.vb: ConstructorDelegate.BeginInvoke(Object(), AsyncCallback, Object)
+- uid: Fast.Activator.Utils.ConstructorDelegate.BeginInvoke*
+  name: BeginInvoke
+  href: api/Fast.Activator.Utils.ConstructorDelegate.html#Fast_Activator_Utils_ConstructorDelegate_BeginInvoke_
+  commentId: Overload:Fast.Activator.Utils.ConstructorDelegate.BeginInvoke
+  fullName: Fast.Activator.Utils.ConstructorDelegate.BeginInvoke
+  nameWithType: ConstructorDelegate.BeginInvoke
+- uid: Fast.Activator.Utils.ConstructorDelegate.EndInvoke(System.IAsyncResult)
+  name: EndInvoke(IAsyncResult)
+  href: api/Fast.Activator.Utils.ConstructorDelegate.html#Fast_Activator_Utils_ConstructorDelegate_EndInvoke_System_IAsyncResult_
+  commentId: M:Fast.Activator.Utils.ConstructorDelegate.EndInvoke(System.IAsyncResult)
+  fullName: Fast.Activator.Utils.ConstructorDelegate.EndInvoke(System.IAsyncResult)
+  nameWithType: ConstructorDelegate.EndInvoke(IAsyncResult)
+- uid: Fast.Activator.Utils.ConstructorDelegate.EndInvoke*
+  name: EndInvoke
+  href: api/Fast.Activator.Utils.ConstructorDelegate.html#Fast_Activator_Utils_ConstructorDelegate_EndInvoke_
+  commentId: Overload:Fast.Activator.Utils.ConstructorDelegate.EndInvoke
+  fullName: Fast.Activator.Utils.ConstructorDelegate.EndInvoke
+  nameWithType: ConstructorDelegate.EndInvoke
+- uid: Fast.Activator.Utils.ConstructorDelegate.Invoke(System.Object[])
+  name: Invoke(params object[])
+  href: api/Fast.Activator.Utils.ConstructorDelegate.html#Fast_Activator_Utils_ConstructorDelegate_Invoke_System_Object___
+  commentId: M:Fast.Activator.Utils.ConstructorDelegate.Invoke(System.Object[])
+  name.vb: Invoke(ParamArray Object())
+  fullName: Fast.Activator.Utils.ConstructorDelegate.Invoke(params object[])
+  fullName.vb: Fast.Activator.Utils.ConstructorDelegate.Invoke(ParamArray Object())
+  nameWithType: ConstructorDelegate.Invoke(params object[])
+  nameWithType.vb: ConstructorDelegate.Invoke(ParamArray Object())
+- uid: Fast.Activator.Utils.ConstructorDelegate.Invoke*
+  name: Invoke
+  href: api/Fast.Activator.Utils.ConstructorDelegate.html#Fast_Activator_Utils_ConstructorDelegate_Invoke_
+  commentId: Overload:Fast.Activator.Utils.ConstructorDelegate.Invoke
+  fullName: Fast.Activator.Utils.ConstructorDelegate.Invoke
+  nameWithType: ConstructorDelegate.Invoke
+- uid: Fast.Activator.Utils.ConstructorList
+  name: ConstructorList
+  href: api/Fast.Activator.Utils.ConstructorList.html
+  commentId: T:Fast.Activator.Utils.ConstructorList
+  fullName: Fast.Activator.Utils.ConstructorList
+  nameWithType: ConstructorList
+- uid: Fast.Activator.Utils.ConstructorList.#ctor(System.Type,System.Int32)
+  name: ConstructorList(Type, int)
+  href: api/Fast.Activator.Utils.ConstructorList.html#Fast_Activator_Utils_ConstructorList__ctor_System_Type_System_Int32_
+  commentId: M:Fast.Activator.Utils.ConstructorList.#ctor(System.Type,System.Int32)
+  name.vb: New(Type, Integer)
+  fullName: Fast.Activator.Utils.ConstructorList.ConstructorList(System.Type, int)
+  fullName.vb: Fast.Activator.Utils.ConstructorList.New(System.Type, Integer)
+  nameWithType: ConstructorList.ConstructorList(Type, int)
+  nameWithType.vb: ConstructorList.New(Type, Integer)
+- uid: Fast.Activator.Utils.ConstructorList.#ctor*
+  name: ConstructorList
+  href: api/Fast.Activator.Utils.ConstructorList.html#Fast_Activator_Utils_ConstructorList__ctor_
+  commentId: Overload:Fast.Activator.Utils.ConstructorList.#ctor
+  name.vb: New
+  fullName: Fast.Activator.Utils.ConstructorList.ConstructorList
+  fullName.vb: Fast.Activator.Utils.ConstructorList.New
+  nameWithType: ConstructorList.ConstructorList
+  nameWithType.vb: ConstructorList.New
+- uid: Fast.Activator.Utils.ConstructorList.CreateInstance
+  name: CreateInstance()
+  href: api/Fast.Activator.Utils.ConstructorList.html#Fast_Activator_Utils_ConstructorList_CreateInstance
+  commentId: M:Fast.Activator.Utils.ConstructorList.CreateInstance
+  fullName: Fast.Activator.Utils.ConstructorList.CreateInstance()
+  nameWithType: ConstructorList.CreateInstance()
+- uid: Fast.Activator.Utils.ConstructorList.CreateInstance(System.Object[])
+  name: CreateInstance(object[])
+  href: api/Fast.Activator.Utils.ConstructorList.html#Fast_Activator_Utils_ConstructorList_CreateInstance_System_Object___
+  commentId: M:Fast.Activator.Utils.ConstructorList.CreateInstance(System.Object[])
+  name.vb: CreateInstance(Object())
+  fullName: Fast.Activator.Utils.ConstructorList.CreateInstance(object[])
+  fullName.vb: Fast.Activator.Utils.ConstructorList.CreateInstance(Object())
+  nameWithType: ConstructorList.CreateInstance(object[])
+  nameWithType.vb: ConstructorList.CreateInstance(Object())
+- uid: Fast.Activator.Utils.ConstructorList.CreateInstance*
+  name: CreateInstance
+  href: api/Fast.Activator.Utils.ConstructorList.html#Fast_Activator_Utils_ConstructorList_CreateInstance_
+  commentId: Overload:Fast.Activator.Utils.ConstructorList.CreateInstance
+  fullName: Fast.Activator.Utils.ConstructorList.CreateInstance
+  nameWithType: ConstructorList.CreateInstance
