@@ -82,8 +82,8 @@ jobs:
     
     - name: Upload package to NuGet
       if: steps.versionize.outcome == 'success'
-      run: dotnet nuget push "**/*.nupkg" -k ${{ secrets.NUGET_API_KEY }}
+      run: dotnet nuget push "**/*.nupkg" -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
       
     - name: Upload symbols to NuGet
       if: steps.versionize.outcome == 'success'
-      run: dotnet nuget push "**/*.snupkg" -k ${{ secrets.NUGET_API_KEY }}
+      run: dotnet nuget push "**/*.snupkg" -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
