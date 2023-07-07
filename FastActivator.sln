@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30002.166
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastActivator", "FastActivator\FastActivator.csproj", "{1E404534-CB53-493A-8D69-5CB85130434B}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastActivator.Benchmarks", "FastActivator.Benchmarks\FastActivator.Benchmarks.csproj", "{D4991D58-E755-4036-80FA-818BC07EF156}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastActivator.PropertyTests", "FastActivator.PropertyTests\FastActivator.PropertyTests.csproj", "{BF01C254-A4AC-4CB9-9095-49877CD6BA99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastActivator.Example", "FastActivator.Example\FastActivator.Example.csproj", "{9CEB4C57-6B96-4EE5-A0FD-2EA8216109D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BF01C254-A4AC-4CB9-9095-49877CD6BA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF01C254-A4AC-4CB9-9095-49877CD6BA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF01C254-A4AC-4CB9-9095-49877CD6BA99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CEB4C57-6B96-4EE5-A0FD-2EA8216109D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CEB4C57-6B96-4EE5-A0FD-2EA8216109D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CEB4C57-6B96-4EE5-A0FD-2EA8216109D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CEB4C57-6B96-4EE5-A0FD-2EA8216109D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

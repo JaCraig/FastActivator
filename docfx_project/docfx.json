@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "files": ["FastActivator/bin/Release/net6.0/Fast.Activator.dll"],
+          "files": ["FastActivator/FastActivator.csproj"],
           "src": "../"
         }
       ],
@@ -21,6 +21,18 @@
     }
   ],
   "build": {
+    "globalMetadata": {
+      "_appTitle": "FastActivator API Reference",
+      "_appName": "FastActivator",
+      "_appLogoPath": "images/icon.png",
+      "_appFooter": "<strong><a href='https://github.com/JaCraig/FastActivator'>Open in Github</a></strong>",
+      "_copyrightFooter": "© James Craig. All rights reserved.",
+      "_enableSearch": true,
+      "_disableSideFilter": false,
+      "_enableNewTab": true,
+      "_disableContribution": false,
+      "_disableBreadcrumb": false
+  },
     "content": [
       {
         "files": [
@@ -49,7 +61,7 @@
     "fileMetadataFiles": [],
     "template": [
       "default",
-      "modern"
+      "templates/singulinkfx"
     ],
     "postProcessors": [],
     "keepFileLink": false,
