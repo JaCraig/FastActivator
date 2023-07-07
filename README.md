@@ -1,5 +1,7 @@
 # FastActivator
 
+[![.NET Publish](https://github.com/JaCraig/FastActivator/actions/workflows/dotnet-publish.yml/badge.svg)](https://github.com/JaCraig/FastActivator/actions/workflows/dotnet-publish.yml)
+
 FastActivator is a C# library that provides a faster alternative to the `System.Activator` class for creating instances of classes.
 
 ## Purpose
