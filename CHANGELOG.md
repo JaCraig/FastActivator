@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.18"></a>
+## [2.0.18](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.18) (2023-7-7)
+
+### Bug Fixes
+
+* Another attempted fix for pushing to NuGet ([8c28832](https://www.github.com/JaCraig/FastActivator/commit/8c28832f090559d1fbab1b4f06e603be36021dd1))
+
+### Other
+
+* Merge branch 'master' of https://github.com/JaCraig/FastActivator ([9f0bebc](https://www.github.com/JaCraig/FastActivator/commit/9f0bebc099bed63a92fbc9a8ea89742733f5d130))
+
 <a name="2.0.17"></a>
 ## [2.0.17](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.17) (2023-7-7)
 
