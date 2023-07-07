@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.17"></a>
+## [2.0.17](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.17) (2023-7-7)
+
+### Bug Fixes
+
+* Apparently we need to specify the source ([c7c6096](https://www.github.com/JaCraig/FastActivator/commit/c7c6096dab547fe48df4e88be215bef7a8e5be40))
+
 <a name="2.0.16"></a>
 ## [2.0.16](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.16) (2023-7-7)
 
