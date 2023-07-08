@@ -1,4 +1,4 @@
-Craig's Utility Library Contribution Guide
+Contribution Guide
 ==========================================
 
 ## Bugs
