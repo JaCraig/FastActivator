@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.19"></a>
+## [2.0.19](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.19) (2023-7-9)
+
+### Bug Fixes
+
+* bump xunit from 2.4.2 to 2.5.0 ([3e8a3d0](https://www.github.com/JaCraig/FastActivator/commit/3e8a3d057b82daae0f7f17689dc7de4fc1f0f6e2))
+
+### Other
+
+* Merge pull request #12 from JaCraig/dependabot/nuget/xunit-2.5.0 ([ca5b10e](https://www.github.com/JaCraig/FastActivator/commit/ca5b10ee47faec3dd436d15b0c411a2a16ece030))
+* Create CODE_OF_CONDUCT.md ([d053f35](https://www.github.com/JaCraig/FastActivator/commit/d053f350678c897db03654eca51192d3e8085020))
+* Create CONTRIBUTING.md ([7d86d60](https://www.github.com/JaCraig/FastActivator/commit/7d86d60d10c32b4b8c620b17da75c7b6a5c5f379))
+* Create SECURITY.md ([730480d](https://www.github.com/JaCraig/FastActivator/commit/730480d06df668e37ad98cb2574c50b0b2beb2d4))
+* Update CONTRIBUTING.md ([b195452](https://www.github.com/JaCraig/FastActivator/commit/b19545206d6a74eef1d976d55fc59a7eb4b3d03a))
+* Update dependabot.yml ([771c332](https://www.github.com/JaCraig/FastActivator/commit/771c332b00a40f686a22a683e97633f467c840cf))
+* Update issue templates ([b176ff4](https://www.github.com/JaCraig/FastActivator/commit/b176ff4fe68d8b0001b7c24a1e51383fcbe4f1ca))
+* Updating readme and setup script ([d4d8365](https://www.github.com/JaCraig/FastActivator/commit/d4d8365aa07159f9b3ba3570b63affc69aa2accf))
+
 <a name="2.0.18"></a>
 ## [2.0.18](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.18) (2023-7-7)
 
