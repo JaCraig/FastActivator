@@ -11,7 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastActivator.Benchmarks", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastActivator.PropertyTests", "FastActivator.PropertyTests\FastActivator.PropertyTests.csproj", "{BF01C254-A4AC-4CB9-9095-49877CD6BA99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastActivator.Example", "FastActivator.Example\FastActivator.Example.csproj", "{9CEB4C57-6B96-4EE5-A0FD-2EA8216109D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastActivator.Example", "FastActivator.Example\FastActivator.Example.csproj", "{9CEB4C57-6B96-4EE5-A0FD-2EA8216109D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F6E2EB5-28FA-4350-8CC1-3369414551B9}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
