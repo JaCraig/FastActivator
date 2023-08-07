@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.21"></a>
+## [2.0.21](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.21) (2023-8-7)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([b70ed9f](https://www.github.com/JaCraig/FastActivator/commit/b70ed9f1a6e8db76b9b9abf10eee06e4f13aa1e0))
+
+### Other
+
+* Merge pull request #14 from JaCraig/dependabot/github_actions/dependencies-0717129e0a ([4a71589](https://www.github.com/JaCraig/FastActivator/commit/4a7158926fed5752738b520caa168f5e9128b361))
+* Merge pull request #15 from JaCraig/dependabot/nuget/dependencies-b6d9f0c41d ([aad58c8](https://www.github.com/JaCraig/FastActivator/commit/aad58c88686c0ce3a6bcf7abccbb54169f9905dd))
+* Adding editorconfig ([3d7971b](https://www.github.com/JaCraig/FastActivator/commit/3d7971b60156330a6e68a50d1fc9e12110a08249))
+* bump the dependencies group with 2 updates ([2a9e3ae](https://www.github.com/JaCraig/FastActivator/commit/2a9e3aef770ef847d52bd5e821da0275ecd36cdb))
+* dependabot update ([ca803a1](https://www.github.com/JaCraig/FastActivator/commit/ca803a1b0b0c75c653073371d98181c517515214))
+* merge ([4b6f034](https://www.github.com/JaCraig/FastActivator/commit/4b6f03404dded1aa410c8b13c898b662f8603c51))
+* Update dependabot.yml ([6bc6e39](https://www.github.com/JaCraig/FastActivator/commit/6bc6e39e95402ad2e6b1624f267fc48f4b8e12eb))
+
 <a name="2.0.20"></a>
 ## [2.0.20](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.20) (2023-7-12)
 
