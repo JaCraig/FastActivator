@@ -4,11 +4,6 @@
     "title": "Class FastActivator | FastActivator API Reference",
     "keywords": "Class FastActivator Fast activator static class Inheritance object FastActivator Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Fast.Activator Assembly: Fast.Activator.dll Syntax public static class FastActivator Methods | Improve this Doc View Source CreateInstance(Type) Creates an instance. Declaration public static object CreateInstance(Type type) Parameters Type Name Description Type type The type. Returns Type Description object The object if it can be created, null otherwise. | Improve this Doc View Source CreateInstance(Type, params object[]) Creates an instance. Declaration public static object CreateInstance(Type type, params object[] args) Parameters Type Name Description Type type The type. object[] args The arguments. Returns Type Description object The object if it can be created, null otherwise. | Improve this Doc View Source CreateInstance<TClass>() Creates an instance of the class. Declaration public static TClass CreateInstance<TClass>() Returns Type Description TClass The instance created. Type Parameters Name Description TClass The type of the class. | Improve this Doc View Source CreateInstance<TClass>(params object[]) Creates an instance of the class. Declaration public static TClass CreateInstance<TClass>(params object[] args) Parameters Type Name Description object[] args The arguments. Returns Type Description TClass The instance created. Type Parameters Name Description TClass The type of the class."
   },
-  "api/Fast.Activator.html": {
-    "href": "api/Fast.Activator.html",
-    "title": "Namespace Fast.Activator | FastActivator API Reference",
-    "keywords": "Namespace Fast.Activator Classes FastActivator Fast activator static class"
-  },
   "api/Fast.Activator.Utils.Constructor.html": {
     "href": "api/Fast.Activator.Utils.Constructor.html",
     "title": "Class Constructor | FastActivator API Reference",
@@ -28,6 +23,11 @@
     "href": "api/Fast.Activator.Utils.html",
     "title": "Namespace Fast.Activator.Utils | FastActivator API Reference",
     "keywords": "Namespace Fast.Activator.Utils Classes Constructor Constructor ConstructorList Constructor list Delegates ConstructorDelegate Constructor delegate"
+  },
+  "api/Fast.Activator.html": {
+    "href": "api/Fast.Activator.html",
+    "title": "Namespace Fast.Activator | FastActivator API Reference",
+    "keywords": "Namespace Fast.Activator Classes FastActivator Fast activator static class"
   },
   "api/index.html": {
     "href": "api/index.html",

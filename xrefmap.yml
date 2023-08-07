@@ -13,6 +13,12 @@ references:
   commentId: T:Fast.Activator.FastActivator
   fullName: Fast.Activator.FastActivator
   nameWithType: FastActivator
+- uid: Fast.Activator.FastActivator.CreateInstance(System.Type)
+  name: CreateInstance(Type)
+  href: api/Fast.Activator.FastActivator.html#Fast_Activator_FastActivator_CreateInstance_System_Type_
+  commentId: M:Fast.Activator.FastActivator.CreateInstance(System.Type)
+  fullName: Fast.Activator.FastActivator.CreateInstance(System.Type)
+  nameWithType: FastActivator.CreateInstance(Type)
 - uid: Fast.Activator.FastActivator.CreateInstance(System.Type,System.Object[])
   name: CreateInstance(Type, params object[])
   href: api/Fast.Activator.FastActivator.html#Fast_Activator_FastActivator_CreateInstance_System_Type_System_Object___
@@ -22,12 +28,6 @@ references:
   fullName.vb: Fast.Activator.FastActivator.CreateInstance(System.Type, ParamArray Object())
   nameWithType: FastActivator.CreateInstance(Type, params object[])
   nameWithType.vb: FastActivator.CreateInstance(Type, ParamArray Object())
-- uid: Fast.Activator.FastActivator.CreateInstance(System.Type)
-  name: CreateInstance(Type)
-  href: api/Fast.Activator.FastActivator.html#Fast_Activator_FastActivator_CreateInstance_System_Type_
-  commentId: M:Fast.Activator.FastActivator.CreateInstance(System.Type)
-  fullName: Fast.Activator.FastActivator.CreateInstance(System.Type)
-  nameWithType: FastActivator.CreateInstance(Type)
 - uid: Fast.Activator.FastActivator.CreateInstance*
   name: CreateInstance
   href: api/Fast.Activator.FastActivator.html#Fast_Activator_FastActivator_CreateInstance_
