@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.24"></a>
+## [2.0.24](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.24) (2023-9-4)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([f376387](https://www.github.com/JaCraig/FastActivator/commit/f37638716335443cfbe0978c796b93e4f32f5b43))
+
+### Other
+
+* Merge pull request #30 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-a531d59caf ([9893e93](https://www.github.com/JaCraig/FastActivator/commit/9893e93bd9d3fa4d322d630af6ea57ecea8a4402))
+* Merge pull request #31 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-27524b3346 ([8de44ca](https://www.github.com/JaCraig/FastActivator/commit/8de44ca7bc3b6b045b94a44503ae6bdf1dc62bed))
+* Merge pull request #32 from JaCraig/dependabot/nuget/dependencies-4e4ccc4f96 ([c268022](https://www.github.com/JaCraig/FastActivator/commit/c2680223390d102163b03be1960198157e161311))
+* bump the dependencies group in /FastActivator.Tests with 1 update ([76d3bcd](https://www.github.com/JaCraig/FastActivator/commit/76d3bcd7bcdd9f8947198000819608a9bcd5c258))
+* bump the dependencies group in /FastActivator.Tests with 1 update ([b142320](https://www.github.com/JaCraig/FastActivator/commit/b142320e8c179c25a42df8555a7906e2e70e07d5))
+
 <a name="2.0.23"></a>
 ## [2.0.23](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.0.23) (2023-8-30)
 
