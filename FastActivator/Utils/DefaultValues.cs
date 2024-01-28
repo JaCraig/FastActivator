@@ -11,7 +11,7 @@ namespace Fast.Activator.Utils
         /// <summary>
         /// The values
         /// </summary>
-        public static Dictionary<int, object> Values = new Dictionary<int, object>
+        public static Dictionary<int, object> Values = new()
         {
             [typeof(byte).GetHashCode()] = default(byte),
             [typeof(sbyte).GetHashCode()] = default(sbyte),
@@ -44,6 +44,8 @@ namespace Fast.Activator.Utils
             [typeof(string).GetHashCode()] = default(string),
             [typeof(Guid).GetHashCode()] = default(Guid),
             [typeof(DateTime).GetHashCode()] = default(DateTime),
+            [typeof(DateOnly).GetHashCode()] = default(DateOnly),
+            [typeof(TimeOnly).GetHashCode()] = default(TimeOnly),
             [typeof(DateTimeOffset).GetHashCode()] = default(DateTimeOffset),
             [typeof(TimeSpan).GetHashCode()] = default(TimeSpan),
             [typeof(Guid?).GetHashCode()] = default(Guid?),

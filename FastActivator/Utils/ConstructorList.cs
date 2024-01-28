@@ -17,12 +17,12 @@ namespace Fast.Activator.Utils
         /// <param name="hashCode">The hash code.</param>
         public ConstructorList(Type type, int hashCode)
         {
-            var constructors = type?.GetConstructors() ?? Array.Empty<ConstructorInfo>();
-            var TempConstructors = new List<Constructor>();
-            for (int x = 0; x < constructors.Length; ++x)
+            ConstructorInfo[] Constructors = type?.GetConstructors() ?? Array.Empty<ConstructorInfo>();
+            var TempConstructors = new List<Constructor>(Constructors.Length);
+            for (var X = 0; X < Constructors.Length; ++X)
             {
-                var TempConstructor = constructors[x];
-                var Parameters = TempConstructor.GetParameters();
+                ConstructorInfo TempConstructor = Constructors[X];
+                ParameterInfo[] Parameters = TempConstructor.GetParameters();
                 if (Parameters.Any(y => y.ParameterType.IsPointer))
                     continue;
                 TempConstructors.Add(new Constructor(TempConstructor, Parameters));
@@ -31,15 +31,10 @@ namespace Fast.Activator.Utils
                 TempConstructors.Add(new Constructor(_ => DefaultValue));
             else if (type.IsEnum && DefaultValues.Values.TryGetValue(type.GetEnumUnderlyingType().GetHashCode(), out DefaultValue))
                 TempConstructors.Add(new Constructor(_ => Enum.Parse(type, DefaultValue.ToString(), true)));
-            Constructors = TempConstructors.OrderBy(x => x.ParameterLength).ToArray();
-            if (Constructors.Length > 0 && Constructors[0].ParameterLength == 0)
-                DefaultConstructor = Constructors[0].ConstructorDelegate;
+            this.Constructors = TempConstructors.OrderBy(x => x.ParameterLength).ToArray();
+            if (this.Constructors.Length > 0 && this.Constructors[0].ParameterLength == 0)
+                _DefaultConstructor = this.Constructors[0].ConstructorDelegate;
         }
-
-        /// <summary>
-        /// The default constructor
-        /// </summary>
-        private readonly ConstructorDelegate DefaultConstructor;
 
         /// <summary>
         /// Gets the constructors.
@@ -48,15 +43,20 @@ namespace Fast.Activator.Utils
         private Constructor[] Constructors { get; }
 
         /// <summary>
+        /// The default constructor
+        /// </summary>
+        private readonly ConstructorDelegate _DefaultConstructor;
+
+        /// <summary>
         /// Creates an instance.
         /// </summary>
         /// <param name="args">The arguments.</param>
         /// <returns>The instance created.</returns>
         public object CreateInstance(object[] args)
         {
-            for (int x = 0; x < Constructors.Length; ++x)
+            for (var X = 0; X < Constructors.Length; ++X)
             {
-                var Constructor = Constructors[x];
+                Constructor Constructor = Constructors[X];
                 if (Constructor.IsMatch(args))
                 {
                     return Constructor.CreateInstance(args);
@@ -69,11 +69,6 @@ namespace Fast.Activator.Utils
         /// Creates an instance.
         /// </summary>
         /// <returns>The instance created.</returns>
-        public object CreateInstance()
-        {
-            if (DefaultConstructor is null)
-                return null;
-            return DefaultConstructor(Array.Empty<object>());
-        }
+        public object CreateInstance() => _DefaultConstructor is null ? null : _DefaultConstructor(Array.Empty<object>());
     }
 }

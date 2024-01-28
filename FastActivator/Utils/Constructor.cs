@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
@@ -21,11 +20,19 @@ namespace Fast.Activator.Utils
             if (constructor is null)
                 throw new ArgumentNullException(nameof(constructor));
 
-            var TempParameters = parameters ?? Array.Empty<ParameterInfo>();
-            Parameters = TempParameters.Select(x => x.ParameterType).ToArray();
-            ParameterLength = Parameters.Length;
-            ParameterNullable = Parameters.Select(x => !(Nullable.GetUnderlyingType(x) is null)).ToArray();
-            ConstructorDelegate = CreateConstructor(constructor, TempParameters);
+            parameters ??= Array.Empty<ParameterInfo>();
+
+            ParameterLength = parameters.Length;
+            Parameters = new Type[ParameterLength];
+            ParameterNullable = new bool[ParameterLength];
+
+            for (var X = 0; X < ParameterLength; ++X)
+            {
+                Parameters[X] = parameters[X].ParameterType;
+                ParameterNullable[X] = Nullable.GetUnderlyingType(Parameters[X]) is not null;
+            }
+
+            ConstructorDelegate = CreateConstructor(constructor, parameters);
         }
 
         /// <summary>
@@ -35,16 +42,13 @@ namespace Fast.Activator.Utils
         public Constructor(ConstructorDelegate @delegate)
         {
             ConstructorDelegate = @delegate;
-            ParameterLength = 0;
-            Parameters = Array.Empty<Type>();
-            ParameterNullable = Array.Empty<bool>();
         }
 
         /// <summary>
         /// Gets the size of the parameter.
         /// </summary>
         /// <value>The size of the parameter.</value>
-        public int ParameterLength { get; }
+        public int ParameterLength { get; } = 0;
 
         /// <summary>
         /// Gets the constructor information.
@@ -56,23 +60,20 @@ namespace Fast.Activator.Utils
         /// Gets the parameter nullable.
         /// </summary>
         /// <value>The parameter nullable.</value>
-        private bool[] ParameterNullable { get; }
+        private bool[] ParameterNullable { get; } = Array.Empty<bool>();
 
         /// <summary>
         /// Gets the parameters.
         /// </summary>
         /// <value>The parameters.</value>
-        private Type[] Parameters { get; }
+        private Type[] Parameters { get; } = Array.Empty<Type>();
 
         /// <summary>
         /// Create an instance.
         /// </summary>
         /// <param name="args">The arguments.</param>
         /// <returns>The new object</returns>
-        public object CreateInstance(object[] args)
-        {
-            return ConstructorDelegate(args);
-        }
+        public object CreateInstance(object[] args) => ConstructorDelegate(args);
 
         /// <summary>
         /// Determines whether the specified arguments is a match.
@@ -83,17 +84,16 @@ namespace Fast.Activator.Utils
         {
             if (args is null || args.Length != ParameterLength)
                 return false;
-            for (int x = 0; x < ParameterLength; ++x)
+            for (var X = 0; X < ParameterLength; ++X)
             {
-                var arg = args[x];
-                var Parameter = Parameters[x];
-                if (arg is null)
+                Type ArgType = args[X]?.GetType();
+                Type Parameter = Parameters[X];
+                if (ArgType is null)
                 {
-                    if (ParameterNullable[x])
+                    if (ParameterNullable[X])
                         continue;
                     return false;
                 }
-                var ArgType = arg.GetType();
                 if (!Parameter.IsAssignableFrom(ArgType))
                     return false;
             }
@@ -122,20 +122,19 @@ namespace Fast.Activator.Utils
         /// <returns>The constructor</returns>
         private static ConstructorDelegate CreateConstructor(ConstructorInfo constructor, ParameterInfo[] parameters)
         {
-            var ParameterExpression = Expression.Parameter(typeof(object[]), "args");
+            ParameterExpression ParameterExpression = Expression.Parameter(typeof(object[]), "args");
 
-            var ArgsExpressions = parameters
-                .Select((info, index) => CreateArgumentExpression(ParameterExpression, info, index))
-                .ToArray();
+            var ArgsExpressions = new Expression[parameters.Length];
+            for (var X = 0; X < parameters.Length; ++X)
+            {
+                ArgsExpressions[X] = CreateArgumentExpression(ParameterExpression, parameters[X], X);
+            }
 
             Expression NewExpression = Expression.New(constructor, ArgsExpressions);
             if (constructor.DeclaringType.IsValueType)
                 NewExpression = Expression.Convert(NewExpression, typeof(object));
 
-            return Expression.Lambda(
-                typeof(ConstructorDelegate),
-                NewExpression,
-                ParameterExpression).Compile() as ConstructorDelegate;
+            return Expression.Lambda<ConstructorDelegate>(NewExpression, ParameterExpression).Compile();
         }
     }
 }
