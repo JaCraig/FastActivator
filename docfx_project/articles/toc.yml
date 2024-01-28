@@ -1,2 +1,4 @@
 - name: Example
   href: intro.md
+- name: Speed Comparison
+  href: speed.md
