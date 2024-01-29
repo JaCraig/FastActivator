@@ -10,10 +10,10 @@ The purpose of FastActivator is to replace the usage of `System.Activator` with 
 
 ## Speed Comparisons
 
-|                      Method |      Mean |    Error |   StdDev | Ratio | Rank |  Gen 0 | Gen 1 | Gen 2 | Allocated |
-|---------------------------- |----------:|---------:|---------:|------:|-----:|-------:|------:|------:|----------:|
-|     ActivatorCreateInstance | 509.96 ns | 7.513 ns | 6.660 ns |  1.00 |    2 | 0.0744 |     - |     - |     472 B |
-| FastActivatorCreateInstance |  47.37 ns | 0.935 ns | 0.829 ns |  0.09 |    1 | 0.0153 |     - |     - |      96 B |
+| Method                      | Mean      | Error    | StdDev   | Rank | Gen0   | Allocated |
+|---------------------------- |----------:|---------:|---------:|-----:|-------:|----------:|
+| ActivatorCreateInstance     | 182.80 ns | 1.272 ns | 1.127 ns |    2 | 0.0401 |     336 B |
+| FastActivatorCreateInstance |  28.27 ns | 0.422 ns | 0.352 ns |    1 | 0.0115 |      96 B |
 
 In many instances it's about 2x to 10x faster depending on the method used.
 
