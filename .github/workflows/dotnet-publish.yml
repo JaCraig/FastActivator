@@ -60,8 +60,8 @@ jobs:
     - name: Publish coverage report to coveralls.io
       uses: coverallsapp/github-action@master
       with:
-        github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        path-to-lcov: TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        path-to-lcov: ./TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info
       
     - name: Upload NuGet package
       uses: actions/upload-artifact@v4
