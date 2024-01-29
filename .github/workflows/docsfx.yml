@@ -30,7 +30,7 @@ jobs:
       run: dotnet build --no-restore --configuration $BUILD_CONFIG
 
     - name: Run Speed Test
-      run: dotnet run /home/runner/work/FastActivator/FastActivator/FastActivator.Benchmarks/bin/Release/net8.0/FastActivator.Benchmarks.dll --filter *FastVsActivator*
+      run: dotnet /home/runner/work/FastActivator/FastActivator/FastActivator.Benchmarks/bin/Release/net8.0/FastActivator.Benchmarks.dll --filter *FastVsActivator*
 
     - run: dotnet tool update -g docfx
     - run: docfx docfx_project/docfx.json
