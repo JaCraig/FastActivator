@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.1.2"></a>
+## [2.1.2](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.1.2) (2024-02-01)
+
+### Bug Fixes
+
+* testing merge checks ([8a8004e](https://www.github.com/JaCraig/FastActivator/commit/8a8004e0ee687af95befb83736be68649d2cf4b6))
+
+### Other
+
+* Merge branch 'master' into Merge-Test ([d11eb04](https://www.github.com/JaCraig/FastActivator/commit/d11eb0487ba4b432d770604d6d44ca3dcbe59f15))
+* Merge pull request #106 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-90be57f0f4 ([60baf16](https://www.github.com/JaCraig/FastActivator/commit/60baf16843f35000eb44b1aaf18e679f09930c89))
+* Merge pull request #107 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-c383803938 ([0a78be8](https://www.github.com/JaCraig/FastActivator/commit/0a78be82fc617201b71fddd60cf570797860eff6))
+* Merge pull request #108 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-50e7fead40 ([43f7526](https://www.github.com/JaCraig/FastActivator/commit/43f75266745a63833efc0cc5d9ff801612ec0a29))
+* Merge pull request #110 from JaCraig/merge-test ([379581a](https://www.github.com/JaCraig/FastActivator/commit/379581adb898c11cc24e4eda5c6c7f0180173421))
+* Adding coveralls ([d2642e8](https://www.github.com/JaCraig/FastActivator/commit/d2642e8d3011bf08d70e88ce1275bac2a5d1b1b7))
+* Again ([359482b](https://www.github.com/JaCraig/FastActivator/commit/359482b44228d7c59504ef251eb099a8163aeb10))
+* Apparently Qodana doesn't support .Net at community level ([3d57538](https://www.github.com/JaCraig/FastActivator/commit/3d57538e8a56fb7bf5f416b3187fa20b4f40db4d))
+* Attempt fix ([cab70c7](https://www.github.com/JaCraig/FastActivator/commit/cab70c71a0dbd11ff5b5d64d7823b26118178f3b))
+* bump the dependencies group in /FastActivator.Tests with 1 update ([c46e0b1](https://www.github.com/JaCraig/FastActivator/commit/c46e0b1f385a2f26354987073e8db2355c5a03b5))
+* bump the dependencies group in /FastActivator.Tests with 1 update ([03c2604](https://www.github.com/JaCraig/FastActivator/commit/03c2604b6ef72f8aab8530b41433734411fa8944))
+* bump the dependencies group in /FastActivator.Tests with 1 update ([355ab3a](https://www.github.com/JaCraig/FastActivator/commit/355ab3a478c75c15e39ff4929d0665f9b3cb6697))
+* Create CODEOWNERS ([19003da](https://www.github.com/JaCraig/FastActivator/commit/19003da613d8681ca0f055addf040dec779e0757))
+* Directory fix ([53321a2](https://www.github.com/JaCraig/FastActivator/commit/53321a22b2c571853d613d4216b0ceb8761d0819))
+* Finding path ([1eea976](https://www.github.com/JaCraig/FastActivator/commit/1eea97638e90a4d474e87d311b9e9733d8dd38ad))
+* Finishing adding coveralls ([19bcdd4](https://www.github.com/JaCraig/FastActivator/commit/19bcdd4735504f930798fbd17c194a6ae7f128b5))
+* fixing build ([125e37b](https://www.github.com/JaCraig/FastActivator/commit/125e37b624f142955a761e922999059c0c78533c))
+* fixing test ([e9b73dc](https://www.github.com/JaCraig/FastActivator/commit/e9b73dc97b4497a1889ac5fd5ad9d1fac3a8ee67))
+* merge ([69c2952](https://www.github.com/JaCraig/FastActivator/commit/69c29525fc2c8bbdda5f81252490c4b20774204b))
+* Merge pull request [#109](https://www.github.com/JaCraig/FastActivator/issues/109) from JaCraig/Merge-Test ([a5cd3f3](https://www.github.com/JaCraig/FastActivator/commit/a5cd3f3fd5a704a3566f69b0446cd5177496c637))
+* readme fix ([c6ea2be](https://www.github.com/JaCraig/FastActivator/commit/c6ea2beb803c162ae79714cbd3f8ddb69da1a547))
+* Testing merge approval ([6b20ceb](https://www.github.com/JaCraig/FastActivator/commit/6b20cebdde112cd67a9188e657e89826e96e321d))
+* Trying again ([5b175ac](https://www.github.com/JaCraig/FastActivator/commit/5b175acae6e47e913abaa2f4203a209ec52f081c))
+* Trying again ([ff4c0fc](https://www.github.com/JaCraig/FastActivator/commit/ff4c0fced21d83f0f2ae30cb926b0799cff58e15))
+* Trying out qodana ([4f306d1](https://www.github.com/JaCraig/FastActivator/commit/4f306d14b625910a8a6c0044c6d068df30dc8024))
+* Update dependabot-reviewer.yml ([7aeb57f](https://www.github.com/JaCraig/FastActivator/commit/7aeb57f5a04f23843e78d96a740d7687b5969785))
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.1.1) (2024-01-28)
 
