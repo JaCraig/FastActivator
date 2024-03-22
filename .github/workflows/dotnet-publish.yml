@@ -58,7 +58,7 @@ jobs:
       if: ${{ always() }}
 
     - name: Publish coverage report to coveralls.io
-      uses: coverallsapp/github-action@2
+      uses: coverallsapp/github-action@v2
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         files: ./FastActivator.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info
