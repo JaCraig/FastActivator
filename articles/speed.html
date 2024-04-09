@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
@@ -111,18 +111,18 @@ AMD EPYC 7763, 1 CPU, 4 logical and 2 physical cores
 <tbody>
 <tr>
 <td>ActivatorCreateInstance</td>
-<td style="text-align: right;">278.38 ns</td>
-<td style="text-align: right;">0.846 ns</td>
-<td style="text-align: right;">0.791 ns</td>
+<td style="text-align: right;">282.50 ns</td>
+<td style="text-align: right;">1.233 ns</td>
+<td style="text-align: right;">1.153 ns</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0.0038</td>
 <td style="text-align: right;">336 B</td>
 </tr>
 <tr>
 <td>FastActivatorCreateInstance</td>
-<td style="text-align: right;">37.21 ns</td>
-<td style="text-align: right;">0.059 ns</td>
-<td style="text-align: right;">0.053 ns</td>
+<td style="text-align: right;">36.93 ns</td>
+<td style="text-align: right;">0.168 ns</td>
+<td style="text-align: right;">0.140 ns</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0.0011</td>
 <td style="text-align: right;">96 B</td>
