@@ -42,7 +42,7 @@
   "articles/speed.html": {
     "href": "articles/speed.html",
     "title": "Speed Comparison with Activator from Latest Build | FastActivator API Reference",
-    "keywords": "Speed Comparison with Activator from Latest Build BenchmarkDotNet v0.13.12, Ubuntu 22.04.4 LTS (Jammy Jellyfish) AMD EPYC 7763, 1 CPU, 4 logical and 2 physical cores .NET SDK 8.0.302 [Host] : .NET 8.0.6 (8.0.624.26715), X64 RyuJIT AVX2 DefaultJob : .NET 8.0.6 (8.0.624.26715), X64 RyuJIT AVX2 Method Mean Error StdDev Rank Gen0 Allocated ActivatorCreateInstance 273.26 ns 1.415 ns 1.254 ns 2 0.0038 336 B FastActivatorCreateInstance 37.40 ns 0.296 ns 0.277 ns 1 0.0011 96 B"
+    "keywords": "Speed Comparison with Activator from Latest Build BenchmarkDotNet v0.13.12, Ubuntu 22.04.4 LTS (Jammy Jellyfish) AMD EPYC 7763, 1 CPU, 4 logical and 2 physical cores .NET SDK 8.0.302 [Host] : .NET 8.0.6 (8.0.624.26715), X64 RyuJIT AVX2 DefaultJob : .NET 8.0.6 (8.0.624.26715), X64 RyuJIT AVX2 Method Mean Error StdDev Rank Gen0 Allocated ActivatorCreateInstance 321.27 ns 1.609 ns 1.505 ns 2 0.0038 336 B FastActivatorCreateInstance 37.00 ns 0.163 ns 0.144 ns 1 0.0011 96 B"
   },
   "index.html": {
     "href": "index.html",
