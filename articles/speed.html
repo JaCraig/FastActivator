@@ -88,7 +88,7 @@
 <h1 id="speed-comparison-with-activator-from-latest-build">Speed Comparison with Activator from Latest Build</h1>
 
 <pre><code>
-BenchmarkDotNet v0.13.12, Ubuntu 22.04.4 LTS (Jammy Jellyfish)
+BenchmarkDotNet v0.14.0, Ubuntu 22.04.4 LTS (Jammy Jellyfish)
 AMD EPYC 7763, 1 CPU, 4 logical and 2 physical cores
 .NET SDK 8.0.401
   [Host]     : .NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2
@@ -111,18 +111,18 @@ AMD EPYC 7763, 1 CPU, 4 logical and 2 physical cores
 <tbody>
 <tr>
 <td>ActivatorCreateInstance</td>
-<td style="text-align: right;">282.88 ns</td>
-<td style="text-align: right;">2.557 ns</td>
-<td style="text-align: right;">2.267 ns</td>
+<td style="text-align: right;">283.12 ns</td>
+<td style="text-align: right;">2.685 ns</td>
+<td style="text-align: right;">2.096 ns</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0.0038</td>
 <td style="text-align: right;">336 B</td>
 </tr>
 <tr>
 <td>FastActivatorCreateInstance</td>
-<td style="text-align: right;">36.43 ns</td>
-<td style="text-align: right;">0.090 ns</td>
-<td style="text-align: right;">0.080 ns</td>
+<td style="text-align: right;">37.18 ns</td>
+<td style="text-align: right;">0.076 ns</td>
+<td style="text-align: right;">0.067 ns</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0.0011</td>
 <td style="text-align: right;">96 B</td>
