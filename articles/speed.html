@@ -87,49 +87,7 @@
         <article data-uid="">
 <h1 id="speed-comparison-with-activator-from-latest-build">Speed Comparison with Activator from Latest Build</h1>
 
-<pre><code>
-BenchmarkDotNet v0.14.0, Ubuntu 22.04.5 LTS (Jammy Jellyfish)
-AMD EPYC 7763, 1 CPU, 4 logical and 2 physical cores
-.NET SDK 8.0.404
-  [Host]     : .NET 8.0.11 (8.0.1124.51707), X64 RyuJIT AVX2
-  DefaultJob : .NET 8.0.11 (8.0.1124.51707), X64 RyuJIT AVX2
-
-
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>Method</th>
-<th style="text-align: right;">Mean</th>
-<th style="text-align: right;">Error</th>
-<th style="text-align: right;">StdDev</th>
-<th style="text-align: right;">Rank</th>
-<th style="text-align: right;">Gen0</th>
-<th style="text-align: right;">Allocated</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ActivatorCreateInstance</td>
-<td style="text-align: right;">263.13 ns</td>
-<td style="text-align: right;">1.530 ns</td>
-<td style="text-align: right;">1.278 ns</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0.0038</td>
-<td style="text-align: right;">336 B</td>
-</tr>
-<tr>
-<td>FastActivatorCreateInstance</td>
-<td style="text-align: right;">36.39 ns</td>
-<td style="text-align: right;">0.177 ns</td>
-<td style="text-align: right;">0.165 ns</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.0011</td>
-<td style="text-align: right;">96 B</td>
-</tr>
-</tbody>
-</table>
-
+[!include[FastActivator.Benchmarks.Tests.FastVsActivator-report-github.md](../../FastActivator.Benchmarks/bin/Release/net8.0/BenchmarkDotNet.Artifacts/results/FastActivator.Benchmarks.Tests.FastVsActivator-report-github.md)]
 </article>
 
         <div class="contribution d-print-none">
