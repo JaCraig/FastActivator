@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.0.0"></a>
+## [3.0.0](https://www.github.com/JaCraig/FastActivator/releases/tag/v3.0.0) (2025-01-20)
+
+### Breaking Changes
+
+* **deps:** update project dependencies and frameworks ([4780d9d](https://www.github.com/JaCraig/FastActivator/commit/4780d9df99852ba4585a135c4e9dd69068f8b6a4))
+
+### Other
+
+* Merge pull request #234 from JaCraig/dependabot/nuget/FastActivator.PropertyTests/dependencies-617062173c ([7d72275](https://www.github.com/JaCraig/FastActivator/commit/7d72275e60b5210142e39a9786d542b843cefc55))
+* Merge pull request #235 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-617062173c ([84b1403](https://www.github.com/JaCraig/FastActivator/commit/84b1403eeb2abdd900605eb89f1b62075111840f))
+* Merge pull request #236 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-0eb5dce03c ([f9eda6a](https://www.github.com/JaCraig/FastActivator/commit/f9eda6ad29110e85118ff2228628c488f54aee33))
+* Merge pull request #237 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-637ad84d5b ([027358e](https://www.github.com/JaCraig/FastActivator/commit/027358edb3c8f31e8fb6f287c52bbddcaf84cae6))
+* Merge pull request #238 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-37a7915f86 ([addfae0](https://www.github.com/JaCraig/FastActivator/commit/addfae029b7e9c63caf8b06e9d9c73bc19ad0199))
+* Merge pull request #239 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-2d63af336a ([ca7b7d6](https://www.github.com/JaCraig/FastActivator/commit/ca7b7d694d79183fae02f64de4d24d39e111e961))
+* Merge pull request #240 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-293c44675e ([ae231e9](https://www.github.com/JaCraig/FastActivator/commit/ae231e9772ca82fed49ff96269a3b1bc75a333f1))
+* bump husky in /FastActivator.Tests in the dependencies group ([b6781da](https://www.github.com/JaCraig/FastActivator/commit/b6781da102e9be09f0caf1864ab26b041d817e87))
+* bump Microsoft.NET.Test.Sdk ([c66e069](https://www.github.com/JaCraig/FastActivator/commit/c66e0690890e65a638b60e1a299768d2da62489c))
+* bump Microsoft.NET.Test.Sdk ([c62b256](https://www.github.com/JaCraig/FastActivator/commit/c62b25614f57f22ed158bcc824d3d28a980237ea))
+* bump the dependencies group ([2b8e80d](https://www.github.com/JaCraig/FastActivator/commit/2b8e80d5c587b203000fa0f308748e9fa7c00ff4))
+* bump the dependencies group ([ec7d7e8](https://www.github.com/JaCraig/FastActivator/commit/ec7d7e8d5d0c0928e03aed2d5707f12a8395ccc5))
+* bump the dependencies group ([329d3f2](https://www.github.com/JaCraig/FastActivator/commit/329d3f2a37ad65a4551be2389a17e5c7ce64e86f))
+* bump xunit.runner.visualstudio ([a9fd972](https://www.github.com/JaCraig/FastActivator/commit/a9fd97206181f8187677c92ef80dbfe3437975e4))
+* Merge branch 'master' of https://github.com/JaCraig/FastActivator ([d4ff781](https://www.github.com/JaCraig/FastActivator/commit/d4ff7810c5f2db64033a2ad2e557af0658c97c84))
+* update husky version to 0.7.1 and add rollForward option ([b9ec055](https://www.github.com/JaCraig/FastActivator/commit/b9ec0555ee60a0bae50f93e084b6d3c12adcedaa))
+* update TargetFramework to net8.0 in docfx.json ([391d9ad](https://www.github.com/JaCraig/FastActivator/commit/391d9ad7d40b891b6c9ba7db30f5656923b71203))
+
 <a name="2.2.0"></a>
 ## [2.2.0](https://www.github.com/JaCraig/FastActivator/releases/tag/v2.2.0) (2024-11-16)
 
