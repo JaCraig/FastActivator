@@ -17,10 +17,9 @@ namespace Fast.Activator.Utils
         /// <exception cref="ArgumentNullException">constructor</exception>
         public Constructor(ConstructorInfo constructor, ParameterInfo[] parameters)
         {
-            if (constructor is null)
-                throw new ArgumentNullException(nameof(constructor));
+            ArgumentNullException.ThrowIfNull(constructor);
 
-            parameters ??= Array.Empty<ParameterInfo>();
+            parameters ??= [];
 
             ParameterLength = parameters.Length;
             Parameters = new Type[ParameterLength];
@@ -60,13 +59,13 @@ namespace Fast.Activator.Utils
         /// Gets the parameter nullable.
         /// </summary>
         /// <value>The parameter nullable.</value>
-        private bool[] ParameterNullable { get; } = Array.Empty<bool>();
+        private bool[] ParameterNullable { get; } = [];
 
         /// <summary>
         /// Gets the parameters.
         /// </summary>
         /// <value>The parameters.</value>
-        private Type[] Parameters { get; } = Array.Empty<Type>();
+        private Type[] Parameters { get; } = [];
 
         /// <summary>
         /// Create an instance.
@@ -107,7 +106,7 @@ namespace Fast.Activator.Utils
         /// <param name="parameterInfo">The parameter information.</param>
         /// <param name="index">The index.</param>
         /// <returns>The argument expression</returns>
-        private static Expression CreateArgumentExpression(ParameterExpression parameterExpression, ParameterInfo parameterInfo, int index)
+        private static UnaryExpression CreateArgumentExpression(ParameterExpression parameterExpression, ParameterInfo parameterInfo, int index)
         {
             return Expression.Convert(
                 Expression.ArrayIndex(parameterExpression, Expression.Constant(index)),

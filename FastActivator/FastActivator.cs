@@ -12,7 +12,7 @@ namespace Fast.Activator
         /// <summary>
         /// The constructors
         /// </summary>
-        private static readonly Dictionary<int, ConstructorList> _Constructors = new();
+        private static readonly Dictionary<int, ConstructorList> _Constructors = [];
 
         /// <summary>
         /// The lock object

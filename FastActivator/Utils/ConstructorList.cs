@@ -17,7 +17,7 @@ namespace Fast.Activator.Utils
         /// <param name="hashCode">The hash code.</param>
         public ConstructorList(Type type, int hashCode)
         {
-            ConstructorInfo[] Constructors = type?.GetConstructors() ?? Array.Empty<ConstructorInfo>();
+            ConstructorInfo[] Constructors = type?.GetConstructors() ?? [];
             var TempConstructors = new List<Constructor>(Constructors.Length);
             for (var X = 0; X < Constructors.Length; ++X)
             {
@@ -31,7 +31,7 @@ namespace Fast.Activator.Utils
                 TempConstructors.Add(new Constructor(_ => DefaultValue));
             else if (type.IsEnum && DefaultValues.Values.TryGetValue(type.GetEnumUnderlyingType().GetHashCode(), out DefaultValue))
                 TempConstructors.Add(new Constructor(_ => Enum.Parse(type, DefaultValue.ToString(), true)));
-            this.Constructors = TempConstructors.OrderBy(x => x.ParameterLength).ToArray();
+            this.Constructors = [.. TempConstructors.OrderBy(x => x.ParameterLength)];
             if (this.Constructors.Length > 0 && this.Constructors[0].ParameterLength == 0)
                 _DefaultConstructor = this.Constructors[0].ConstructorDelegate;
         }
@@ -69,6 +69,6 @@ namespace Fast.Activator.Utils
         /// Creates an instance.
         /// </summary>
         /// <returns>The instance created.</returns>
-        public object CreateInstance() => _DefaultConstructor is null ? null : _DefaultConstructor(Array.Empty<object>());
+        public object CreateInstance() => _DefaultConstructor is null ? null : _DefaultConstructor([]);
     }
 }
