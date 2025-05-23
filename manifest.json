@@ -18,7 +18,11 @@
           "relative_path": "api/Fast.Activator.FastActivator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fast.Activator.FastActivator",
+      "Summary": "<p sourcefile=\"api/Fast.Activator.FastActivator.yml\" sourcestartlinenumber=\"1\">Fast activator static class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -28,7 +32,11 @@
           "relative_path": "api/Fast.Activator.Utils.Constructor.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fast.Activator.Utils.Constructor",
+      "Summary": "<p sourcefile=\"api/Fast.Activator.Utils.Constructor.yml\" sourcestartlinenumber=\"1\">Constructor</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -38,7 +46,11 @@
           "relative_path": "api/Fast.Activator.Utils.ConstructorDelegate.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fast.Activator.Utils.ConstructorDelegate",
+      "Summary": "<p sourcefile=\"api/Fast.Activator.Utils.ConstructorDelegate.yml\" sourcestartlinenumber=\"1\">Constructor delegate</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -48,7 +60,11 @@
           "relative_path": "api/Fast.Activator.Utils.ConstructorList.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fast.Activator.Utils.ConstructorList",
+      "Summary": "<p sourcefile=\"api/Fast.Activator.Utils.ConstructorList.yml\" sourcestartlinenumber=\"1\">Constructor list</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -58,7 +74,11 @@
           "relative_path": "api/Fast.Activator.Utils.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fast.Activator.Utils",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -68,7 +88,11 @@
           "relative_path": "api/Fast.Activator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fast.Activator",
+      "Summary": null
     },
     {
       "type": "Conceptual",
