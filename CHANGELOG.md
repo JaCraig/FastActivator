@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.0.1"></a>
+## [3.0.1](https://www.github.com/JaCraig/FastActivator/releases/tag/v3.0.1) (2025-06-27)
+
+### Bug Fixes
+
+* **dependencies:** update NuGet package references and configuration ([4118d53](https://www.github.com/JaCraig/FastActivator/commit/4118d5314c89cdc62f0ff41c70aecade1e80ab03))
+
+### Other
+
+* Merge pull request #241 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-8e84d5e7c4 ([4ce3ef6](https://www.github.com/JaCraig/FastActivator/commit/4ce3ef6fb03c4c146cb9165138db4d8282fc0573))
+* Merge pull request #242 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-cdc5eca79b ([aaa054e](https://www.github.com/JaCraig/FastActivator/commit/aaa054e6f02ff6b26bd13f3cce98bddab3a105d4))
+* Merge pull request #243 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-d90f1eecb3 ([3002a89](https://www.github.com/JaCraig/FastActivator/commit/3002a8934c7a060d988814a1eae0ae0de3fe5518))
+* Merge pull request #244 from JaCraig/dependabot/nuget/FastActivator.Benchmarks/BenchmarkDotNet-0.15.0 ([aadf831](https://www.github.com/JaCraig/FastActivator/commit/aadf831c29e2fa59752efde09a735c0817af81a4))
+* Merge pull request #245 from JaCraig/dependabot/nuget/FastActivator.Benchmarks/dependencies-f88efadd4e ([cb41c19](https://www.github.com/JaCraig/FastActivator/commit/cb41c195c4570f21c40ee397adbb698666ff376f))
+* Merge pull request #246 from JaCraig/dependabot/nuget/FastActivator.Benchmarks/dependencies-e29392ff60 ([73f79ab](https://www.github.com/JaCraig/FastActivator/commit/73f79abef5f68930da02bc27583f1a7081009afa))
+* Update BenchmarkDotNet to 0.15.0 ([ab32904](https://www.github.com/JaCraig/FastActivator/commit/ab3290485cf6ba6825d9cf087f05301e2f5e5bf6))
+* bump Mecha.xUnit ([69eb34f](https://www.github.com/JaCraig/FastActivator/commit/69eb34fac41b062eedb5323af3e0cfb5373b6cfd))
+* bump Mecha.xUnit ([8ac02e5](https://www.github.com/JaCraig/FastActivator/commit/8ac02e59c43767302758ee9ab44e17fccb6f78c8))
+* bump Mecha.xUnit ([2e0e092](https://www.github.com/JaCraig/FastActivator/commit/2e0e092bedb7611b220b172b40575db42024719a))
+* Bump the dependencies group with 1 update ([17eab2b](https://www.github.com/JaCraig/FastActivator/commit/17eab2b789f4b9e5ccf22d1d0453bd1f67f5c5d1))
+* Bump the dependencies group with 1 update ([42c3dfa](https://www.github.com/JaCraig/FastActivator/commit/42c3dfaea5919be0fca0419ddd5b33d8dd35072a))
+
 <a name="3.0.0"></a>
 ## [3.0.0](https://www.github.com/JaCraig/FastActivator/releases/tag/v3.0.0) (2025-01-20)
 
