@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.1.0"></a>
+## [3.1.0](https://www.github.com/JaCraig/FastActivator/releases/tag/v3.1.0) (2026-02-12)
+
+### Features
+
+* **ConstructorList:** reorder fields and update docs ([b4b5d0b](https://www.github.com/JaCraig/FastActivator/commit/b4b5d0b75835ba09df18d206d747ceef74b4cf0e))
+* **project:** add net10.0 support and update Mecha.xUnit ([12a4bdd](https://www.github.com/JaCraig/FastActivator/commit/12a4bddcff6470900cab126e80576a54a5107a9d))
+
+### Bug Fixes
+
+* **ExceptionHandler:** Fixing tests ([61ab06a](https://www.github.com/JaCraig/FastActivator/commit/61ab06a650cd03fe639e71c02d9fc3a75dd4a661))
+* **tests:** update Mecha.xUnit and add project refs ([8c5079b](https://www.github.com/JaCraig/FastActivator/commit/8c5079bc459557e153b4567cd0ef4e22373e9fdc))
+
+### Other
+
+* **base:** add exception handling to BreakType ([a5d506c](https://www.github.com/JaCraig/FastActivator/commit/a5d506ca97e7b574be98f6c5fb98ce191892638b))
+
 <a name="3.0.5"></a>
 ## [3.0.5](https://www.github.com/JaCraig/FastActivator/releases/tag/v3.0.5) (2026-02-11)
 
