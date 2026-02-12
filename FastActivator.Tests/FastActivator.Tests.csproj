@@ -11,7 +11,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Mecha.xUnit" Version="3.2.12" />
+    <PackageReference Include="Mecha.xUnit" Version="3.3.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
     <PackageReference Include="xunit" Version="2.9.3" />
     <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5">
@@ -25,6 +25,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Mecha\Mecha.Core\Mecha.Core.csproj" />
+    <ProjectReference Include="..\..\Mecha\Mecha.xUnit\Mecha.xUnit.csproj" />
     <ProjectReference Include="..\FastActivator\FastActivator.csproj" />
   </ItemGroup>
 
