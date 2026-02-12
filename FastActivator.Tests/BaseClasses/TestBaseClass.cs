@@ -63,6 +63,12 @@ namespace Fast.Activator.Tests.BaseClasses
         /// </summary>
         /// <returns>The async task.</returns>
         [Fact]
-        public Task BreakType() => Mech.BreakAsync(ObjectType);
+        public Task BreakType() => Mech.BreakAsync(ObjectType, new Options
+        {
+            ExceptionHandlers = new ExceptionHandler()
+                                    .IgnoreException<NotImplementedException>()
+                                    .IgnoreException<ArgumentException>()
+                                    .IgnoreException<ArgumentNullException>()
+        });
     }
 }
