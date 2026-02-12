@@ -37,15 +37,15 @@ namespace Fast.Activator.Utils
         }
 
         /// <summary>
+        /// The default constructor
+        /// </summary>
+        private readonly ConstructorDelegate _DefaultConstructor;
+
+        /// <summary>
         /// Gets the constructors.
         /// </summary>
         /// <value>The constructors.</value>
         private Constructor[] Constructors { get; }
-
-        /// <summary>
-        /// The default constructor
-        /// </summary>
-        private readonly ConstructorDelegate _DefaultConstructor;
 
         /// <summary>
         /// Creates an instance.
