@@ -66,9 +66,9 @@ namespace Fast.Activator.Tests.BaseClasses
         public Task BreakType() => Mech.BreakAsync(ObjectType, new Options
         {
             ExceptionHandlers = new ExceptionHandler()
-                                    .IgnoreException<NotImplementedException>()
-                                    .IgnoreException<ArgumentException>()
-                                    .IgnoreException<ArgumentNullException>()
+                                    .IgnoreException<NotImplementedException>((_, __) => true)
+                                    .IgnoreException<ArgumentException>((_, __) => true)
+                                    .IgnoreException<ArgumentNullException>((_, __) => true)
         });
     }
 }
