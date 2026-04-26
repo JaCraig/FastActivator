@@ -14,8 +14,7 @@ namespace Fast.Activator.Utils
         /// Initializes a new instance of the <see cref="ConstructorList"/> class.
         /// </summary>
         /// <param name="type">The type.</param>
-        /// <param name="hashCode">The hash code.</param>
-        public ConstructorList(Type type, int hashCode)
+        public ConstructorList(Type type)
         {
             ConstructorInfo[] Constructors = type?.GetConstructors() ?? [];
             var TempConstructors = new List<Constructor>(Constructors.Length);
@@ -27,9 +26,9 @@ namespace Fast.Activator.Utils
                     continue;
                 TempConstructors.Add(new Constructor(TempConstructor, Parameters));
             }
-            if (DefaultValues.Values.TryGetValue(hashCode, out var DefaultValue))
+            if (DefaultValues.Values.TryGetValue(type, out var DefaultValue))
                 TempConstructors.Add(new Constructor(_ => DefaultValue));
-            else if (type.IsEnum && DefaultValues.Values.TryGetValue(type.GetEnumUnderlyingType().GetHashCode(), out DefaultValue))
+            else if (type.IsEnum && DefaultValues.Values.TryGetValue(type.GetEnumUnderlyingType(), out DefaultValue))
                 TempConstructors.Add(new Constructor(_ => Enum.Parse(type, DefaultValue.ToString(), true)));
             this.Constructors = [.. TempConstructors.OrderBy(x => x.ParameterLength)];
             if (this.Constructors.Length > 0 && this.Constructors[0].ParameterLength == 0)

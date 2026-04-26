@@ -8,7 +8,7 @@ namespace Fast.Activator.Tests.Utils
     {
         public ConstructorListTests()
         {
-            TestObject = new ConstructorList(typeof(TestDataClass), typeof(TestDataClass).GetHashCode());
+            TestObject = new ConstructorList(typeof(TestDataClass));
         }
     }
 }

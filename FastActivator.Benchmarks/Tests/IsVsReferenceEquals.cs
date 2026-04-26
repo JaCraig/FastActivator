@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
+using System;
 
 namespace FastActivator.Benchmarks.Tests
 {
@@ -10,7 +11,7 @@ namespace FastActivator.Benchmarks.Tests
         public void Is() => _ = TestObject is null;
 
         [Benchmark]
-        public void ReferenceEquals() => _ = TestObject is null;
+        public void ReferenceEquals() => _ = ReferenceEquals(TestObject, null);
 
         private class TestClass
         { }

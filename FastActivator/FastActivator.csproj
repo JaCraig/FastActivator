@@ -6,7 +6,6 @@
     <AssemblyName>Fast.Activator</AssemblyName>
     <Description>Fast.Activator is a quicker version of Activator.CreateInstance.</Description>
     <AssemblyTitle>Fast.Activator</AssemblyTitle>
-    <VersionPrefix>2.0.0</VersionPrefix>
     <Authors>James Craig</Authors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageId>Fast.Activator</PackageId>
@@ -32,9 +31,9 @@
     <PackageReleaseNotes>https://github.com/JaCraig/FastActivator/blob/master/CHANGELOG.md</PackageReleaseNotes>
     <Copyright>Copyright © James Craig 2020</Copyright>
   </PropertyGroup>
-	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
-		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-	</PropertyGroup>
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
   <ItemGroup>
     <None Include="..\icon.png">
       <Pack>True</Pack>
@@ -46,7 +45,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-	  <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.203" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.203" PrivateAssets="All" />
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.203">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

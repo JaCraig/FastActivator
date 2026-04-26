@@ -1,6 +1,7 @@
 ﻿using Fast.Activator.Utils;
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 namespace Fast.Activator
 {
@@ -12,12 +13,7 @@ namespace Fast.Activator
         /// <summary>
         /// The constructors
         /// </summary>
-        private static readonly Dictionary<int, ConstructorList> _Constructors = [];
-
-        /// <summary>
-        /// The lock object
-        /// </summary>
-        private static readonly object _LockObject = new();
+        private static readonly ConstructorCache _Constructors = new();
 
         /// <summary>
         /// Creates an instance of the class.
@@ -70,20 +66,8 @@ namespace Fast.Activator
         /// Creates the constructors.
         /// </summary>
         /// <param name="type">The type.</param>
-        /// <param name="hashCode">The hash code.</param>
         /// <returns>The constructors</returns>
-        private static ConstructorList CreateConstructors(Type type, int hashCode)
-        {
-            ConstructorList TempConstructor = null;
-            lock (_LockObject)
-            {
-                if (_Constructors.TryGetValue(hashCode, out TempConstructor))
-                    return TempConstructor;
-                TempConstructor = new ConstructorList(type, hashCode);
-                _Constructors.Add(hashCode, TempConstructor);
-            }
-            return TempConstructor;
-        }
+        private static ConstructorList CreateConstructors(Type type) => new(type);
 
         /// <summary>
         /// Gets the constructor list.
@@ -92,14 +76,6 @@ namespace Fast.Activator
         /// <returns>The constructor list.</returns>
         /// <exception cref="ArgumentNullException">type</exception>
         private static ConstructorList GetConstructorList(Type type)
-        {
-            int HashCode;
-            try
-            {
-                HashCode = type.GetHashCode();
-            }
-            catch { return null; }
-            return !_Constructors.TryGetValue(HashCode, out ConstructorList TempConstructor) ? CreateConstructors(type, HashCode) : TempConstructor;
-        }
+            => _Constructors.GetOrAdd(type, CreateConstructors);
     }
 }

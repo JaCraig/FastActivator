@@ -10,10 +10,12 @@ namespace FastActivator.Benchmarks.Tests
 
     public class TypeComparisons
     {
+        private readonly TestClass TestObject = new();
+
         [Benchmark(Baseline = true)]
         public void IsAssignableFrom() => typeof(ITestInterface).IsAssignableFrom(typeof(TestClass));
 
         [Benchmark]
-        public void IsInstanceOfType() => typeof(TestClass).IsInstanceOfType(typeof(ITestInterface));
+        public void IsInstanceOfType() => typeof(ITestInterface).IsInstanceOfType(TestObject);
     }
 }

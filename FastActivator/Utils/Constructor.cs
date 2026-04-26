@@ -89,7 +89,7 @@ namespace Fast.Activator.Utils
                 Type Parameter = Parameters[X];
                 if (ArgType is null)
                 {
-                    if (ParameterNullable[X])
+                    if (ParameterNullable[X] || !Parameter.IsValueType)
                         continue;
                     return false;
                 }
