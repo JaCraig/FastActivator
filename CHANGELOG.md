@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.2.0"></a>
+## [3.2.0](https://www.github.com/JaCraig/FastActivator/releases/tag/v3.2.0) (2026-04-26)
+
+### Features
+
+* **benchmarks:** add cache strategy and dictionary key comparison benchmarks ([6aa0a30](https://www.github.com/JaCraig/FastActivator/commit/6aa0a30c8b544394d56c498ff98698856bb1ec46))
+
+### Other
+
+* Merge pull request #366 from JaCraig/dependabot/nuget/FastActivator.PropertyTests/dependencies-fa28052a0a ([8dfe386](https://www.github.com/JaCraig/FastActivator/commit/8dfe3866692bdaf1846be8614fbf71b6ca8fd2d0))
+* Bump the dependencies group with 3 updates ([9b080d4](https://www.github.com/JaCraig/FastActivator/commit/9b080d4d6142961b31dd4c09cee3913e55968720))
+
 <a name="3.1.6"></a>
 ## [3.1.6](https://www.github.com/JaCraig/FastActivator/releases/tag/v3.1.6) (2026-04-22)
 
