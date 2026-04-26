@@ -150,15 +150,15 @@ references:
   commentId: T:Fast.Activator.Utils.ConstructorList
   fullName: Fast.Activator.Utils.ConstructorList
   nameWithType: ConstructorList
-- uid: Fast.Activator.Utils.ConstructorList.#ctor(System.Type,System.Int32)
-  name: ConstructorList(Type, int)
-  href: api/Fast.Activator.Utils.ConstructorList.html#Fast_Activator_Utils_ConstructorList__ctor_System_Type_System_Int32_
-  commentId: M:Fast.Activator.Utils.ConstructorList.#ctor(System.Type,System.Int32)
-  name.vb: New(Type, Integer)
-  fullName: Fast.Activator.Utils.ConstructorList.ConstructorList(System.Type, int)
-  fullName.vb: Fast.Activator.Utils.ConstructorList.New(System.Type, Integer)
-  nameWithType: ConstructorList.ConstructorList(Type, int)
-  nameWithType.vb: ConstructorList.New(Type, Integer)
+- uid: Fast.Activator.Utils.ConstructorList.#ctor(System.Type)
+  name: ConstructorList(Type)
+  href: api/Fast.Activator.Utils.ConstructorList.html#Fast_Activator_Utils_ConstructorList__ctor_System_Type_
+  commentId: M:Fast.Activator.Utils.ConstructorList.#ctor(System.Type)
+  name.vb: New(Type)
+  fullName: Fast.Activator.Utils.ConstructorList.ConstructorList(System.Type)
+  fullName.vb: Fast.Activator.Utils.ConstructorList.New(System.Type)
+  nameWithType: ConstructorList.ConstructorList(Type)
+  nameWithType.vb: ConstructorList.New(Type)
 - uid: Fast.Activator.Utils.ConstructorList.#ctor*
   name: ConstructorList
   href: api/Fast.Activator.Utils.ConstructorList.html#Fast_Activator_Utils_ConstructorList__ctor_
