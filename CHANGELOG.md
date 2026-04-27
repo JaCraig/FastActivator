@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.2.1"></a>
+## [3.2.1](https://www.github.com/JaCraig/FastActivator/releases/tag/v3.2.1) (2026-04-27)
+
+### Bug Fixes
+
+* **commit-lint:** improve commit message validation logic ([e1b90bf](https://www.github.com/JaCraig/FastActivator/commit/e1b90bff33860e3e9e974672c4ab788c56ff43e4))
+
+### Other
+
+* **agents:** add agent guide for repository context and usage ([c437172](https://www.github.com/JaCraig/FastActivator/commit/c437172e72624f2357e36bfc57813e5a79a2a20d))
+* **release:** update version to 3.2.0 ([6e86b4b](https://www.github.com/JaCraig/FastActivator/commit/6e86b4b4f10e5ebe519e7350a2913edbd52cf52b))
+
 <a name="3.2.0"></a>
 ## [3.2.0](https://www.github.com/JaCraig/FastActivator/releases/tag/v3.2.0) (2026-04-26)
 
