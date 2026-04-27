@@ -25,8 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Mecha\Mecha.Core\Mecha.Core.csproj" />
-    <ProjectReference Include="..\..\Mecha\Mecha.xUnit\Mecha.xUnit.csproj" />
     <ProjectReference Include="..\FastActivator\FastActivator.csproj" />
   </ItemGroup>
 
