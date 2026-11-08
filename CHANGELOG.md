@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.2.5"></a>
+## [3.2.5](https://www.github.com/JaCraig/FastActivator/releases/tag/v3.2.5) (2026-11-08)
+
+### Bug Fixes
+
+* Bump the dependencies group with 2 updates ([e5f5560](https://www.github.com/JaCraig/FastActivator/commit/e5f5560b0a8fab2af5ce3f34b8835f025ec635b4))
+* Bump the dependencies group with 2 updates ([600e797](https://www.github.com/JaCraig/FastActivator/commit/600e797b962f2d6ad156ff316aafba1652794001))
+* Bump the dependencies group with 2 updates ([cb032d4](https://www.github.com/JaCraig/FastActivator/commit/cb032d47fce71a2e2133071a89513d9a21972537))
+* **workflow:** update permissions and add publish steps ([095bb28](https://www.github.com/JaCraig/FastActivator/commit/095bb28237894fc99babd9f6725afb4fbdb3e923))
+
+### Other
+
+* Merge pull request #388 from JaCraig/dependabot/nuget/FastActivator.PropertyTests/dependencies-b18f94246c ([3f3c47d](https://www.github.com/JaCraig/FastActivator/commit/3f3c47d9f788c36d8542ea358c2fdf92be3d4a0b))
+* Merge pull request #389 from JaCraig/dependabot/nuget/FastActivator/dependencies-39d8d9731f ([21fce27](https://www.github.com/JaCraig/FastActivator/commit/21fce27d5c075b1ecc5daca628fc18cb8a79382b))
+* Merge pull request #390 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-3e8ca8d6b6 ([60a220e](https://www.github.com/JaCraig/FastActivator/commit/60a220e3bab3e6853abd96cce9fb37c9cb47f23e))
+* Merge pull request #391 from JaCraig/dependabot/nuget/FastActivator.PropertyTests/dependencies-3e8ca8d6b6 ([f98b003](https://www.github.com/JaCraig/FastActivator/commit/f98b003c22b9e40bfeeb67426cf1aa221229208a))
+* Merge pull request #392 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-8af17d2a0f ([41856fb](https://www.github.com/JaCraig/FastActivator/commit/41856fba038bfb31a3002496fc3dd3a2178aa01b))
+* Merge pull request #393 from JaCraig/dependabot/nuget/FastActivator.PropertyTests/dependencies-8af17d2a0f ([3ea2fe7](https://www.github.com/JaCraig/FastActivator/commit/3ea2fe7e79bf6994eb1da2b583dfec39cf1d5d47))
+* Merge pull request #394 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-1aaad36d12 ([7160295](https://www.github.com/JaCraig/FastActivator/commit/7160295dae1fcd79fe7e90116908e19f37ce1d1d))
+* Merge pull request #395 from JaCraig/dependabot/nuget/FastActivator.PropertyTests/dependencies-1aaad36d12 ([fd3f7ce](https://www.github.com/JaCraig/FastActivator/commit/fd3f7cedbbb915f870074fd196de5e27119c5fa1))
+* Merge pull request #396 from JaCraig/dependabot/nuget/FastActivator/dependencies-c1ede9f7c1 ([aeca087](https://www.github.com/JaCraig/FastActivator/commit/aeca087e463a9bbadcb9ea7b4fd545dd3bc78032))
+* Merge pull request #397 from JaCraig/dependabot/nuget/FastActivator.Tests/dependencies-ed859a41c4 ([ac2cca5](https://www.github.com/JaCraig/FastActivator/commit/ac2cca5fc2c3df5d187d69eb88e5ed380e5918fb))
+* Merge pull request #398 from JaCraig/dependabot/nuget/FastActivator.PropertyTests/dependencies-ed859a41c4 ([0516986](https://www.github.com/JaCraig/FastActivator/commit/05169869cba045d859e4248a7bde92cee2b932cc))
+* Merge pull request #399 from JaCraig/dependabot/nuget/FastActivator/dependencies-f4803d6dd8 ([8761355](https://www.github.com/JaCraig/FastActivator/commit/8761355af2c655db57e0805f08baf77c7eb03034))
+* Bump the dependencies group with 1 update ([33e4194](https://www.github.com/JaCraig/FastActivator/commit/33e4194e07d324946fefb3aaf9eff9207419ce68))
+* Bump the dependencies group with 1 update ([9cc3143](https://www.github.com/JaCraig/FastActivator/commit/9cc314322b9836fca936a702c06648b33dd4dca3))
+* Bump the dependencies group with 1 update ([659922a](https://www.github.com/JaCraig/FastActivator/commit/659922a296311b4f598214206dedabe422f24ed7))
+* Bump the dependencies group with 1 update ([5c2697d](https://www.github.com/JaCraig/FastActivator/commit/5c2697d4cd495b02f397a6daacd5b817617d47a2))
+* Bump the dependencies group with 2 updates ([99110e6](https://www.github.com/JaCraig/FastActivator/commit/99110e6d6c3d72bd6262649be7338a095c2aaf47))
+* Bump the dependencies group with 2 updates ([035a60d](https://www.github.com/JaCraig/FastActivator/commit/035a60d4f7046c66483434f5c01ed33657c669eb))
+* Bump the dependencies group with 2 updates ([f8fe702](https://www.github.com/JaCraig/FastActivator/commit/f8fe7022c77fb7fc1dd73798df483461811c7498))
+* Bump the dependencies group with 2 updates ([6283475](https://www.github.com/JaCraig/FastActivator/commit/62834753ec6c5cc57b4537cd6646c65288a68209))
+* Bump the dependencies group with 3 updates ([5529ca2](https://www.github.com/JaCraig/FastActivator/commit/5529ca2804c42d37c1412b8f4249ff56f1fe7c13))
+
 <a name="3.2.4"></a>
 ## [3.2.4](https://www.github.com/JaCraig/FastActivator/releases/tag/v3.2.4) (2026-08-21)
 
