@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.0"></a>
+## [4.0.0](https://www.github.com/JaCraig/FastActivator/releases/tag/v4.0.0) (2026-11-13)
+
+### Features
+
+* **framework:** upgrade target frameworks and tooling ([6fdb3de](https://www.github.com/JaCraig/FastActivator/commit/6fdb3de10ec571c5dacf4c9427b7ecdc824e24bb))
+
+### Breaking Changes
+
+* **framework:** upgrade target frameworks and tooling ([6fdb3de](https://www.github.com/JaCraig/FastActivator/commit/6fdb3de10ec571c5dacf4c9427b7ecdc824e24bb))
+
 <a name="3.2.5"></a>
 ## [3.2.5](https://www.github.com/JaCraig/FastActivator/releases/tag/v3.2.5) (2026-11-08)
 
